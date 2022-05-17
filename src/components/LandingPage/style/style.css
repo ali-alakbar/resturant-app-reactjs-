@@ -404,6 +404,9 @@ a:hover {
     display: grid;
     justify-items: center;
   }
+  .homeOne {
+    height: inherit;
+  }
   .homeTwo {
     height: inherit;
   }

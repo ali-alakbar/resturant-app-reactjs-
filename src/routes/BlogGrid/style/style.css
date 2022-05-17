@@ -134,6 +134,10 @@ a:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 100%;
+  }
+  .blog-grid-section .right-side-container .right-side .btn-container {
+    width: 35vw !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

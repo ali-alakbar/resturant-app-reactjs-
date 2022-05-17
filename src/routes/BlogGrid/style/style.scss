@@ -59,6 +59,12 @@
 .blog-grid-section {
     .right-side-container {
         justify-content: center;
+        width: 100%;
+        .right-side{
+            .btn-container{
+                width: 35vw !important;
+            }
+        }
         }
     }
 }

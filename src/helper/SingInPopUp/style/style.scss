@@ -1,0 +1,94 @@
+@import "../../../App";
+
+
+
+.singin-popup{
+    position: absolute;
+    top: 5em;
+    right: 4em;
+    text-align: left;
+    z-index: 20;
+    background-color: $--mainWhite;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, .05);
+    border:solid 2px $--mainBorder ;
+    border-top: solid 2px $--mainYellow;
+    width: 320px;
+    padding: 20px;
+    max-height: 500px;
+    cursor: auto;
+    transition: $--mainTransition;
+    opacity: 0;
+    pointer-events: none;
+    
+    .signin-title{
+        h3{
+            font-size: 18px;
+            color: #333;
+            a{
+                display: inline;
+                border: none;
+                font-size: 14px;
+                line-height: 48px;
+                color: $--mainYellow;
+                &:hover{
+                    color: $--mainYellowHover;
+                    background-color: transparent;
+                    border: none;
+                }
+            }
+        }
+    }
+    .signin-form{
+        .input-container{
+            label{
+                position: relative;
+                top: 5px;
+                margin-bottom: .5rem;
+                font-size: 14px;
+                line-height: 1.5;
+                font-weight: 500;
+                color: $--mainLightGray;
+                .star-require{
+                    border-bottom: 0 !important;
+                    color: #e2401c;
+                }
+            }
+            input{
+                width: 100%;
+                line-height: normal !important;
+                border-width: 1px;
+                padding: 15px;
+                font-size: 14px;
+                padding: .68em 1em;
+                background-color: $--mainWhite;
+                color: #808080;
+                border: solid 1px $--mainBorder;
+                -webkit-appearance: none;
+                box-sizing: border-box;
+                font-weight: 400;
+                border-radius: 8px;
+                transition: $--mainTransition;
+                margin-bottom: 1em;
+                &:focus{
+                    border: solid 1px $--mainYellowHover;
+                }
+            }
+        }
+        .login-btn{
+            @include btn();
+        }   
+    }
+}
+
+// ==============
+// Start Responsivity
+// ==============
+
+@media (max-width: 1170px) {
+    .singin-popup {
+        display: none !important; 
+    }
+}
+    // ==============
+    // End Responsivity
+    // ==============

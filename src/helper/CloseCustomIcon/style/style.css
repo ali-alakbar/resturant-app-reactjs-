@@ -1,0 +1,126 @@
+/* Start Screen Responsive */
+/* Small Screens */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Big Screens */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* End Screen Responsive */
+.container {
+  padding: 0 80px;
+  margin: 0 auto;
+}
+
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Gilroy', sans-serif;
+}
+
+input, textarea {
+  outline: none;
+}
+
+.section {
+  padding-top: 100px;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+a {
+  color: #999;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #eeac00;
+}
+
+.App {
+  position: relative;
+  overflow: hidden;
+}
+
+/* medium Screens */
+@media (max-width: 1200px) {
+  .App {
+    padding-bottom: 75px;
+  }
+}
+
+.custom-icon-container {
+  position: relative;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.custom-icon-container .custom-icon {
+  position: absolute;
+  display: inline-block;
+  height: 2px;
+  width: 15px;
+  background-color: #000;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-icon-container .line-one {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.custom-icon-container .line-two {
+  -webkit-transform: rotate(130deg);
+          transform: rotate(130deg);
+}
+
+.custom-icon-container:hover .custom-icon {
+  background-color: #eeac00;
+}
+
+.custom-icon-container:hover .line-one {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.custom-icon-container:hover .line-two {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,291 @@
+/* Start Screen Responsive */
+/* Small Screens */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Big Screens */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* End Screen Responsive */
+.container {
+  padding: 0 80px;
+  margin: 0 auto;
+}
+
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Gilroy', sans-serif;
+}
+
+input, textarea {
+  outline: none;
+}
+
+.section {
+  padding-top: 100px;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+a {
+  color: #999;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #eeac00;
+}
+
+.App {
+  position: relative;
+  overflow: hidden;
+}
+
+/* medium Screens */
+@media (max-width: 1200px) {
+  .App {
+    padding-bottom: 75px;
+  }
+}
+
+.cart-section .tabel-container {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% auto;
+      grid-template-columns: 60% auto;
+  padding: 0 30px;
+  padding-bottom: 6em;
+}
+
+.cart-section .tabel-container .content-warn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #999;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.cart-section .tabel-container .left-side {
+  width: 100%;
+  padding: 0 20px;
+  padding-bottom: 6em;
+}
+
+.cart-section .tabel-container .left-side table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-section .tabel-container .left-side table thead tr {
+  border-bottom: solid 1px #e5e5e5;
+}
+
+.cart-section .tabel-container .left-side table thead tr th {
+  padding: 1em;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #1E1D23;
+  font-weight: 700;
+}
+
+.cart-section .tabel-container .left-side table tbody tr {
+  border-bottom: solid 1px #e5e5e5;
+}
+
+.cart-section .tabel-container .left-side table tbody tr td {
+  text-align: center;
+  padding: 1em;
+  text-transform: uppercase;
+  color: #1E1D23;
+  font-weight: 700;
+}
+
+.cart-section .tabel-container .left-side table tbody tr td .number-qty {
+  width: 40px;
+}
+
+.cart-section .tabel-container .left-side table tbody tr .product-img {
+  width: 130px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.cart-section .tabel-container .left-side table tbody tr .product-img::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  background: #FFC222;
+  z-index: -1;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.cart-section .tabel-container .left-side table tbody tr .product-img:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.cart-section .tabel-container .left-side table tbody tr .product-img:hover::after {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+.cart-section .tabel-container .left-side table tbody tr .product-img img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cart-section .tabel-container .left-side table tbody tr .product-icon svg {
+  cursor: pointer;
+}
+
+.cart-section .tabel-container .left-side table tbody tr .product-icon svg:hover {
+  color: #FFC222;
+}
+
+.cart-section .tabel-container .right-side {
+  padding: 20px 35px 40px;
+  position: relative;
+  border: 6px solid #e5e5e5;
+  height: -moz-fit-content;
+  height: -webkit-fit-content;
+  height: fit-content;
+}
+
+.cart-section .tabel-container .right-side h2 {
+  margin-bottom: 2em;
+}
+
+.cart-section .tabel-container .right-side .product {
+  padding: 20px;
+}
+
+.cart-section .tabel-container .right-side .product .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: solid 1px #e5e5e5;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+.cart-section .tabel-container .right-side .product .row h3 {
+  font-size: 15px;
+}
+
+.cart-section .tabel-container .right-side .product .product-info {
+  display: -ms-grid;
+  display: grid;
+}
+
+.cart-section .tabel-container .right-side .product .product-info .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cart-section .tabel-container .right-side .product .product-info .total h2 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #FFC222;
+}
+
+.cart-section .tabel-container .right-side .product .product-info .shipping .shipping-type .input-container label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  gap: 0.5em;
+}
+
+.cart-section .tabel-container .right-side .product .product-info .proceed-btn {
+  color: #1E1D23;
+  background-color: #FFC222;
+  font-size: 12px !important;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  line-height: normal !important;
+  border: solid 3px #FFC222;
+  padding: 15px;
+  width: 100%;
+  border-radius: 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-size: 15px !important;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.cart-section .tabel-container .right-side .product .product-info .proceed-btn:hover {
+  background-color: #fff;
+}
+
+@media (max-width: 992px) {
+  .cart-section .tabel-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=style.css.map */

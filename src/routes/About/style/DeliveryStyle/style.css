@@ -1,0 +1,173 @@
+/* Start Screen Responsive */
+/* Small Screens */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Big Screens */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* End Screen Responsive */
+.container {
+  padding: 0 80px;
+  margin: 0 auto;
+}
+
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Gilroy', sans-serif;
+}
+
+input, textarea {
+  outline: none;
+}
+
+.section {
+  padding-top: 100px;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+a {
+  color: #999;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #eeac00;
+}
+
+.App {
+  position: relative;
+  overflow: hidden;
+}
+
+/* medium Screens */
+@media (max-width: 1200px) {
+  .App {
+    padding-bottom: 75px;
+  }
+}
+
+.delivery-bg-section {
+  background-image: url("../../media/deliever-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 90vh;
+}
+
+.delivery-bg-section .container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.delivery-bg-section .container h1 {
+  font-family: 'Norican',cursive;
+  color: #FFC222;
+  font-size: 32px;
+}
+
+.delivery-bg-section .container h2 {
+  color: #1E1D23;
+  font-weight: 800;
+  line-height: 60px;
+  letter-spacing: -.25px;
+  margin-bottom: .4em;
+  font-size: 60px;
+}
+
+.delivery-bg-section .container p {
+  color: #999;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.9;
+  margin-bottom: 2em;
+  padding: 0 340px;
+}
+
+.delivery-bg-section .container button {
+  color: #1E1D23;
+  background-color: #FFC222;
+  font-size: 12px !important;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  line-height: normal !important;
+  border: solid 3px #FFC222;
+  padding: 15px;
+  width: 100%;
+  border-radius: 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 200px;
+}
+
+.delivery-bg-section .container button:hover {
+  background-color: #fff;
+}
+
+@media (max-width: 1200px) {
+  .delivery-bg-section .container p {
+    padding: 0 250px;
+  }
+}
+
+@media (max-width: 992px) {
+  .delivery-bg-section .container h2 {
+    font-size: 40px;
+  }
+  .delivery-bg-section .container p {
+    padding: 0 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .delivery-bg-section .container h2 {
+    font-size: 24px;
+  }
+  .delivery-bg-section .container p {
+    padding: 0 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

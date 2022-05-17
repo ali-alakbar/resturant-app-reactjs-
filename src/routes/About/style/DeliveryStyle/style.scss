@@ -1,0 +1,101 @@
+@import "../../../../App";
+
+
+
+.delivery-bg-section{
+    background-image: url("../../media/deliever-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90vh;
+    .container{
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        h1{
+            font-family: 'Norican',cursive;
+            color: #FFC222;
+            font-size: 32px;
+        }
+        h2{
+            color: #1E1D23;
+            font-weight: 800;
+            line-height: 60px;
+            letter-spacing: -.25px;
+            margin-bottom: .4em;
+            font-size: 60px;
+        }
+        p{
+            color: #999;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 1.9;
+            margin-bottom: 2em;
+            padding:0 340px;
+        }
+        button{
+            @include btn();
+            width: 200px;
+        }
+
+    }
+}
+
+
+// ==============
+// Start Responsivity
+// ==============
+
+// Big Screens
+@media (max-width: 1200px) {
+
+    .delivery-bg-section {
+
+        .container {
+
+
+            p {
+                padding: 0 250px;
+            }
+        }
+    }
+}
+
+// Medium Screens
+@media (max-width: 992px) {
+    .delivery-bg-section {
+    
+        .container {
+    
+            h2{
+                font-size: 40px;
+            }
+            p {
+                padding: 0 100px;
+            }
+        }
+    }
+}
+
+// Small Screens
+@media (max-width: 768px) {
+    .delivery-bg-section {
+    
+        .container {
+            h2{
+                font-size: 24px;
+            }
+            p {
+                padding: 0 10px;
+            }
+        }
+    }
+}
+
+// ==============
+// End Responsivity
+// ==============

@@ -1,0 +1,27 @@
+
+@import "../../../../App";
+
+.homeTwo-section{
+    .slider-section{
+        margin-bottom: 6rem;
+        .title-heading{
+            margin-bottom: 4rem;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 30px;
+            margin-bottom: 4rem;
+            h1{
+                color: $--mainHeading;
+                font-size: 42px;
+                line-height: 45px;
+            }
+            a{
+                color: $--mainHeading;
+                svg{
+                    color: #00a149;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,184 @@
+@import "../../../../../../App";
+
+.hotdog-section{
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+    width: 100%;
+    background-image: url("../../../media/bg-offer-2.jpg");
+    background-position: center center;
+    background-size: cover;
+    padding: 0 30px;
+    margin-bottom: 4rem;
+    .img-container{
+        position: absolute;
+        bottom: -70px;
+        left: 50%;
+        transform: translateX(-50%);
+        img{
+            width: 65rem;
+        }
+    }
+    .other-content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        z-index: 10;
+        .content-wrapper{
+            position: relative;
+            .thunder-wrapper{
+                position: absolute;
+                left: 65%;
+                top: -1.5em;
+                display: flex;
+            }
+            h1{
+                font-family: 'Norican', cursive;
+                color: $--mainWhite;
+                font-size: 42px;
+                line-height: 45px;
+                text-shadow: 3px 0 4px #000;
+            }
+            h2{
+                color: #ffcd02;
+                font-size: 120px;
+                text-transform: uppercase;
+                line-height: 125px;
+                text-shadow: 0 1px 5px rgba(0, 0, 0, .5);
+                margin-bottom: 50px;
+            }
+            .btn-container {
+                display: flex;
+                text-align: center;
+                .goto-menu {
+                    @include btn();
+                    width: 140px;
+                }
+            }
+        }
+        .cloud-offer-wrapper{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            .cloud-offer{
+                background-image: url("../../../media/cloud-offer.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .content{
+                    position: relative;
+                    left: -1em;
+                    top: -1em;
+                    h1{
+                        font-family: 'Norican',
+                        cursive;
+                        font-size: 16px;
+                    }
+                    p{
+                        font-size: 40px;
+                        line-height: 40px;
+                        color: $--mainHeading;
+                        font-weight: 800;
+                        span{
+                            color: #ffcd02;
+                        }
+                    }
+                }
+            }
+        }
+    }
+   
+}
+
+
+// ===================
+// Start Screen Responsive 
+// ===================
+/* Medium Screens */
+@media (max-width: 992px) {
+    .hotdog-section {
+            .other-content {
+                .content-wrapper {
+                    h1 {
+                        font-size: 30px;
+                    }
+                    h2 {
+                        font-size: 80px;
+                    }
+                }
+    
+                .cloud-offer-wrapper {
+                    .cloud-offer {
+                        .content {
+    
+                            h1 {
+                                font-size: 14px;
+                            }
+    
+                            p {
+                                font-size: 35px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}
+
+/* Small Screens */
+@media (max-width: 768px) {
+    .hotdog-section {
+        height: 100vh;
+            .other-content {
+                flex-direction: column;
+                text-align: center;
+                .content-wrapper {
+                    display: inline-grid;
+                    justify-items: center;
+                    padding: 4em 0;
+                    .thunder-wrapper{
+                        top: 3.5em;
+                    }
+                    h1 {
+                        font-size: 25px;
+                    }
+    
+                    h2 {
+                        font-size: 65px;
+                        margin-bottom: 0;
+                    }
+                    
+                }
+    
+                .cloud-offer-wrapper {
+                    .cloud-offer {
+                        .content {
+                            position: relative;
+                            left: -1em;
+                            top: -1em;
+                            h1 {
+                                font-size: 14px;
+                            }
+    
+                            p {
+                                font-size: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}
+
+// ===================
+// End Screen Responsive 
+// ===================

@@ -1,0 +1,318 @@
+/* Start Screen Responsive */
+/* Small Screens */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Big Screens */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* End Screen Responsive */
+.container {
+  padding: 0 80px;
+  margin: 0 auto;
+}
+
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Gilroy', sans-serif;
+}
+
+input, textarea {
+  outline: none;
+}
+
+.section {
+  padding-top: 100px;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+a {
+  color: #999;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #eeac00;
+}
+
+.App {
+  position: relative;
+  overflow: hidden;
+}
+
+/* medium Screens */
+@media (max-width: 1200px) {
+  .App {
+    padding-bottom: 75px;
+  }
+}
+
+.wishlist-section a {
+  display: block;
+  color: #FFC222;
+  font-size: 15px;
+  font-weight: 800;
+  margin-bottom: .5em;
+}
+
+.wishlist-section a:hover {
+  color: #eeac00;
+}
+
+.wishlist-section .food-table-section {
+  margin-bottom: 5em;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.wishlist-section .food-table-section table {
+  border-spacing: 0;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.wishlist-section .food-table-section table tr {
+  border-spacing: collapse;
+}
+
+.wishlist-section .food-table-section table tr:hover {
+  background-color: #f2f2f2 !important;
+}
+
+.wishlist-section .food-table-section table tr td {
+  border: solid 1px #e5e5e5;
+}
+
+.wishlist-section .food-table-section table tr .img-section {
+  width: 90px;
+  background-color: #f7f3ee;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.wishlist-section .food-table-section table tr .img-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  background: #FFC222;
+  z-index: -1;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.wishlist-section .food-table-section table tr .img-section:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.wishlist-section .food-table-section table tr .img-section:hover::after {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+.wishlist-section .food-table-section table tr .img-section img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.wishlist-section .food-table-section table tr .food-info-section {
+  padding: 10px 5px;
+  width: 65vw;
+}
+
+.wishlist-section .food-table-section table tr .food-info-section .price, .wishlist-section .food-table-section table tr .food-info-section p {
+  color: #999;
+  font-weight: 500;
+  margin-right: 0.5em;
+}
+
+.wishlist-section .food-table-section table tr .food-info-section .discounted-price {
+  font-weight: 800;
+  color: #999;
+}
+
+.wishlist-section .food-table-section table tr .food-info-section p {
+  margin-top: 5.5px;
+}
+
+.wishlist-section .food-table-section table tr .add-cart-section {
+  padding: 10px 15px;
+  padding-right: 20px;
+}
+
+.wishlist-section .food-table-section table tr .add-cart-section span {
+  display: block;
+  margin-bottom: .5em;
+  color: #999;
+}
+
+.wishlist-section .food-table-section table tr .add-cart-section a {
+  color: #FFC222;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.wishlist-section .food-table-section table tr .add-cart-section a:hover {
+  color: #eeac00;
+}
+
+.wishlist-section .share-on {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-bottom: 5em;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.wishlist-section .share-on .left-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wishlist-section .share-on .left-side span {
+  margin-right: 1em;
+  color: #999;
+}
+
+.wishlist-section .share-on .left-side ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: .5em;
+}
+
+.wishlist-section .share-on .right-side #link {
+  height: 9vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wishlist-section .share-on .right-side #link span {
+  color: #999;
+  width: 100px;
+}
+
+.wishlist-section .share-on .right-side #link input {
+  font-size: 15px;
+  padding: .68em 1em;
+  background-color: transparent;
+  color: #999;
+  border: solid 1px #e5e5e5;
+  font-weight: 500;
+  border-radius: 20px;
+  outline: 0;
+}
+
+.wishlist-section .share-on .right-side #link button {
+  color: #1E1D23;
+  background-color: #FFC222;
+  font-size: 12px !important;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  line-height: normal !important;
+  border: solid 3px #FFC222;
+  padding: 15px;
+  width: 100%;
+  border-radius: 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 100px;
+}
+
+.wishlist-section .share-on .right-side #link button:hover {
+  background-color: #fff;
+}
+
+/* Medium Screens */
+@media (max-width: 992px) {
+  .wishlist-section .food-table-section table tr .img-section {
+    width: 100px;
+  }
+  .wishlist-section .food-table-section table tr .food-info-section {
+    width: 50vw;
+  }
+  .wishlist-section .food-table-section table tr .add-cart-section a {
+    font-size: 16px;
+  }
+}
+
+/* Small Screens */
+@media (max-width: 768px) {
+  .wishlist-section .food-table-section table tr .food-info-section {
+    width: 35vw;
+  }
+  .wishlist-section .food-table-section table tr .food-info-section a {
+    font-size: 12px;
+  }
+  .wishlist-section .food-table-section table tr .food-info-section p {
+    font-size: 12px;
+  }
+  .wishlist-section .food-table-section table tr .food-info-section span {
+    font-size: 13px !important;
+  }
+  .wishlist-section .food-table-section table tr .add-cart-section span {
+    font-size: 10px;
+    font-weight: 600;
+  }
+  .wishlist-section .food-table-section table tr .add-cart-section a {
+    font-size: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

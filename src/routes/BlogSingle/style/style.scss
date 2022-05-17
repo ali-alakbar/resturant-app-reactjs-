@@ -1,0 +1,54 @@
+@import  "../../../App";
+
+
+.blog-single-section{
+    .blog-posts{
+        .right-side-container{
+            .right-side{
+                .more-details{
+                    p{
+                        font-weight: 500;
+                        padding-right: 3em;
+                    }
+                    .heading-title{
+                        font-size: 40px;
+                    }
+                }
+                .two{
+                    .part-one{
+                        display: grid;
+                        grid-template-columns: 50% 50%;
+                        h2{
+                            font-size: 24px;
+                            line-height: 1.4em;
+                            font-weight: normal;
+                            overflow-wrap: break-word;
+                        }
+                        caption{
+                            display: flex;
+                            gap: 1em;
+                            align-items: center;
+                            padding: .8em 0;
+                            .img-container{
+                                width: 60px;
+                                height: 60px;
+                                img{
+                                    border-radius: 50%;
+                                    height: 100%;
+                                }
+                            }
+                            .more-info{
+                                text-align: start;
+                                span{
+                                    color: $--mainLightGray;
+                                    font-size: 14px;
+                                    text-transform: uppercase;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

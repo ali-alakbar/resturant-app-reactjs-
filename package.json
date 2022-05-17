@@ -1,0 +1,68 @@
+{
+  "homepage":"http://ali-alakbar.github.io/resturant-app-reactjs-",
+  "name": "resturant-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emailjs/browser": "^3.6.2",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-brands-svg-icons": "^6.1.1",
+    "@fortawesome/free-regular-svg-icons": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.1.18",
+    "@mui/icons-material": "^5.6.2",
+    "@mui/material": "^5.6.4",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.0.1",
+    "@testing-library/user-event": "^13.5.0",
+    "aos": "^2.3.4",
+    "google-maps": "^4.3.3",
+    "react": "^18.1.0",
+    "react-awesome-slider": "^4.1.0",
+    "react-dom": "^18.1.0",
+    "react-elastic-carousel": "^0.11.5",
+    "react-id-swiper": "^4.0.0",
+    "react-parallax": "^3.3.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "react-scroll-motion": "^0.2.6",
+    "react-scroll-parallax": "^3.1.0",
+    "react-touch-carousel": "^0.10.2",
+    "styled-components": "^5.3.5",
+    "swiper": "^8.1.4",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0",
+    "node-sass": "^7.0.1",
+    "sass": "^1.50.0"
+  }
+}

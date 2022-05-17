@@ -1,0 +1,120 @@
+/* Start Screen Responsive */
+/* Small Screens */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Big Screens */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* End Screen Responsive */
+.container {
+  padding: 0 80px;
+  margin: 0 auto;
+}
+
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Gilroy', sans-serif;
+}
+
+input, textarea {
+  outline: none;
+}
+
+.section {
+  padding-top: 100px;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+a {
+  color: #999;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #eeac00;
+}
+
+.App {
+  position: relative;
+  overflow: hidden;
+}
+
+/* medium Screens */
+@media (max-width: 1200px) {
+  .App {
+    padding-bottom: 75px;
+  }
+}
+
+.faq-section .container .container-items .question-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 30px;
+  font-size: 17px;
+  color: #1E1D23;
+  background-color: #fbf7e8;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.faq-section .container .container-items .hidden-content {
+  padding: 10px 30px;
+  color: #999;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  line-height: 0;
+}
+
+.faq-section .container .container-items .active-hidden-content {
+  line-height: 1.5;
+  opacity: 1;
+}
+
+.faq-section .container .active-container-items .question-container {
+  background-color: #FFC222;
+}
+
+@media (max-width: 768px) {
+  .faq-section .container .container-items .question-container {
+    font-size: 13px;
+  }
+  .faq-section .container .container-items .active-hidden-content {
+    font-size: 13px;
+    line-height: 2;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,139 @@
+/* Start Screen Responsive */
+/* Small Screens */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Big Screens */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* End Screen Responsive */
+.container {
+  padding: 0 80px;
+  margin: 0 auto;
+}
+
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Gilroy', sans-serif;
+}
+
+input, textarea {
+  outline: none;
+}
+
+.section {
+  padding-top: 100px;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+a {
+  color: #999;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #eeac00;
+}
+
+.App {
+  position: relative;
+  overflow: hidden;
+}
+
+/* medium Screens */
+@media (max-width: 1200px) {
+  .App {
+    padding-bottom: 75px;
+  }
+}
+
+.blog-grid-section .right-side-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  gap: 2em;
+}
+
+.blog-grid-section .right-side-container .right-side {
+  width: 400px;
+  border: solid 1px #e5e5e5;
+  border-radius: 10px;
+  margin-bottom: 5em;
+}
+
+.blog-grid-section .right-side-container .right-side .img-container {
+  height: 260px;
+  overflow: hidden;
+}
+
+.blog-grid-section .right-side-container .right-side .img-container img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: 100%;
+}
+
+.blog-grid-section .right-side-container .right-side .img-container img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.blog-grid-section .right-side-container .right-side .more-details {
+  padding: 30px !important;
+}
+
+.blog-grid-section .right-side-container .right-side .more-details .heading-title {
+  font-size: 20px !important;
+}
+
+.blog-grid-section .right-side-container .right-side .more-details .heading-title:hover {
+  color: #eeac00;
+}
+
+.blog-grid-section .right-side-container .right-side .more-details p {
+  font-size: 12px !important;
+}
+
+@media (max-width: 768px) {
+  .blog-grid-section .right-side-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */

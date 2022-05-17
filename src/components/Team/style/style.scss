@@ -1,0 +1,175 @@
+@import "../../../App";
+
+.components {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    margin-bottom: 5em;
+
+    .info-card {
+        width: 370px;
+        margin-bottom: 2em;
+
+        .img-container {
+            position: relative;
+            margin-bottom: 2em;
+
+            // Color on hover on image
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: $--mainYellow;
+                z-index: 9;
+                opacity: 0;
+                transition: $--mainTransition;
+            }
+
+            &:hover {
+                &::before {
+                    opacity: 0.6;
+
+                }
+
+                // unhide small box on hovering
+                .box-hover {
+                    &::before {
+                        opacity: 1;
+                        transform: scale(1);
+                    }
+                }
+            }
+
+            img {
+                width: 100%;
+                border-radius: 10px;
+            }
+
+            // Box appears on hovering
+            .box-hover {
+                position: absolute;
+                height: 81%;
+                width: 74%;
+                left: 36px;
+                top: 39px;
+                z-index: 100;
+
+                &::before {
+                    content: "+";
+                    display: inline-grid;
+                    font-size: 70px;
+                    color: $--mainWhite;
+                    width: 100%;
+                    height: 100%;
+                    align-items: center;
+                    justify-items: center;
+                    outline: 2px solid $--mainWhite;
+                    transition: $--mainTransition;
+                    transform: scale(1.2);
+                    opacity: 0;
+                }
+            }
+
+            // Yellow small box on the bottom of the image
+            .job-title {
+                position: absolute;
+                bottom: -8px;
+                left: 50%;
+                transform: translateX(-50%);
+                text-align: center;
+                padding: 10px 20px;
+                font-weight: 600;
+                z-index: 10;
+                background-color: $--mainYellow;
+                color: $--mainHeading;
+            }
+        }
+
+        .personal-info {
+            text-align: center;
+            padding: 0 40px;
+
+            h2 {
+                color: $--mainHeading;
+                font-size: 23px;
+                margin-bottom: 1em;
+            }
+
+            p {
+                color: $--mainLightGray;
+                font-weight: 500;
+                margin-bottom: 1em;
+            }
+
+            ul {
+                display: flex;
+                justify-content: center;
+                gap: 1em;
+
+                li {
+                    padding: 5px 10px;
+                    cursor: pointer;
+                    transition: $--mainTransition;
+
+                    &:hover {
+                        color: $--mainYellowHover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ==============
+// Start Responsivity
+// ==============
+
+// Big Screens
+@media (max-width: 1200px) {
+        .components {
+            .info-card {
+                width: 320px;
+        }
+    }
+}
+
+// Medium Screens
+@media (max-width: 992px) {
+        .components {
+            .info-card {
+                width: 300px;
+
+
+                .personal-info {
+                    h2 {
+                        font-size: 21px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                    }
+
+
+                }
+            }
+        }
+}
+
+// Small Screens
+@media (max-width: 768px) {
+        .components {
+            .info-card {
+                width: 280px;
+        }
+    }
+}
+
+// ==============
+// End Responsivity
+// ==============

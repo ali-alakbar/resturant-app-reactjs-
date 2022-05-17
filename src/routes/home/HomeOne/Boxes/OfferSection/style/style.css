@@ -1,0 +1,230 @@
+/* Start Screen Responsive */
+/* Small Screens */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Big Screens */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* End Screen Responsive */
+.container {
+  padding: 0 80px;
+  margin: 0 auto;
+}
+
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Gilroy', sans-serif;
+}
+
+input, textarea {
+  outline: none;
+}
+
+.section {
+  padding-top: 100px;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+a {
+  color: #999;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #eeac00;
+}
+
+.App {
+  position: relative;
+  overflow: hidden;
+}
+
+/* medium Screens */
+@media (max-width: 1200px) {
+  .App {
+    padding-bottom: 75px;
+  }
+}
+
+.offer-section {
+  background-color: #f7f2e2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2em;
+  margin-bottom: 7em;
+  padding: 6rem 30px;
+}
+
+.offer-section .offer-section-box {
+  background-color: #fff;
+  width: 31%;
+  padding: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  grid-auto-flow: dense;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  direction: rtl;
+  padding: 35px 30px 30px 40px;
+  height: 40vh;
+}
+
+.offer-section .offer-section-box .img-container {
+  position: relative;
+}
+
+.offer-section .offer-section-box .img-container img {
+  width: 100%;
+}
+
+.offer-section .offer-section-box .img-container .bg-main {
+  position: relative;
+  top: 2em;
+  right: 1.6em;
+  z-index: 3;
+}
+
+.offer-section .offer-section-box .img-container .bg-banner {
+  position: absolute;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.offer-section .offer-section-box .other-content {
+  text-align: end;
+}
+
+.offer-section .offer-section-box .other-content h1 {
+  font-size: 28px;
+  line-height: 30px;
+  margin-bottom: 10px;
+  color: #1E1D23;
+}
+
+.offer-section .offer-section-box .other-content h2 {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 20px;
+  text-shadow: 1px 1px 10px #fff;
+  margin-bottom: 15px;
+  padding-right: 3em;
+  color: #1E1D23;
+}
+
+.offer-section .offer-section-box .other-content p {
+  font-size: 20px;
+  font-weight: 800;
+  color: #00A149;
+}
+
+.offer-section .offer-section-box .other-content a {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 4.6em;
+  letter-spacing: 0;
+  color: #FFC222;
+}
+
+.offer-section .offer-section-box .other-content a:hover {
+  color: #eeac00;
+}
+
+.offer-section .offer-section-box:hover .img-container .bg-banner {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.offer-section .green {
+  background-image: url("../media/h1_banner2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.offer-section .green .other-content h1 {
+  color: #fff;
+}
+
+.offer-section .green .other-content h2 {
+  color: #fff;
+  text-shadow: 1px 1px 10px #000;
+}
+
+.offer-section .green .other-content p {
+  color: #FFC222;
+}
+
+/* Big Screens */
+@media (max-width: 1200px) {
+  .offer-section .offer-section-box {
+    padding: 50px 30px;
+    width: 35%;
+  }
+}
+
+/* Medium Screens */
+@media (max-width: 992px) {
+  .offer-section .offer-section-box {
+    width: 40%;
+    height: 40vh;
+  }
+}
+
+/* Small Screens */
+@media (max-width: 768px) {
+  .offer-section .offer-section-box {
+    width: 100%;
+    height: 40vh;
+    padding: 20px 30px;
+  }
+  .offer-section .offer-section-box .other-content h1 {
+    font-size: 25px;
+  }
+  .offer-section .offer-section-box .other-content h2 {
+    font-size: 11px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

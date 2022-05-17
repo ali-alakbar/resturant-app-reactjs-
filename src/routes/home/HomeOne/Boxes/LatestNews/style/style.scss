@@ -1,0 +1,15 @@
+@import "../../../../../../App";
+
+.news-section{
+    h1{
+        font-size: 36px;
+        color: $--mainHeading;
+        margin-bottom: 5rem;
+        padding: 0 20px;
+    }
+    .blog-grid-section{
+        .right-side-container{
+            justify-content: center;
+        }
+    }
+}

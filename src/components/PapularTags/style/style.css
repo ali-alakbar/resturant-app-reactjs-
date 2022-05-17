@@ -1,0 +1,152 @@
+/* Start Screen Responsive */
+/* Small Screens */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Big Screens */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* End Screen Responsive */
+.container {
+  padding: 0 80px;
+  margin: 0 auto;
+}
+
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Gilroy', sans-serif;
+}
+
+input, textarea {
+  outline: none;
+}
+
+.section {
+  padding-top: 100px;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+a {
+  color: #999;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #eeac00;
+}
+
+.App {
+  position: relative;
+}
+
+/* medium Screens */
+@media (max-width: 1200px) {
+  .App {
+    padding-bottom: 75px;
+  }
+}
+
+.popular-tags {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+
+.popular-tags h2 {
+  padding: 10px 20px;
+}
+
+.popular-tags ul {
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 3em;
+}
+
+.popular-tags ul a {
+  border: solid 1px #e5e5e5;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-size: 12px;
+  color: #1E1D23;
+}
+
+.popular-tags ul a:hover {
+  color: #eeac00;
+  border: solid 1px #eeac00;
+}
+
+.popular-tags .adv {
+  background-color: #ffc222;
+  padding: 30px 0 0;
+  text-align: center;
+}
+
+.popular-tags .adv h2 {
+  font-family: 'Norican', cursive;
+  color: #fff;
+  font-size: 32px;
+  line-height: 30px;
+  margin-bottom: 0;
+}
+
+.popular-tags .adv h3 {
+  color: #00A149;
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: .2em;
+}
+
+.popular-tags .adv span {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  line-height: 13px;
+  margin-bottom: 1em;
+}
+
+.popular-tags .adv p {
+  color: #f00000;
+  font-size: 22px;
+  line-height: 25px;
+  font-weight: 700;
+}
+
+.popular-tags .adv .img-container img {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */

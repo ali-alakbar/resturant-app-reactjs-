@@ -1,0 +1,235 @@
+/* Start Screen Responsive */
+/* Small Screens */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Big Screens */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* End Screen Responsive */
+.container {
+  padding: 0 80px;
+  margin: 0 auto;
+}
+
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Gilroy', sans-serif;
+}
+
+input, textarea {
+  outline: none;
+}
+
+.section {
+  padding-top: 100px;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+a {
+  color: #999;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #eeac00;
+}
+
+.App {
+  position: relative;
+  overflow: hidden;
+}
+
+/* medium Screens */
+@media (max-width: 1200px) {
+  .App {
+    padding-bottom: 75px;
+  }
+}
+
+.components {
+  width: 100%;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2em;
+  margin-bottom: 5em;
+}
+
+.components .info-card {
+  width: 370px;
+  margin-bottom: 2em;
+}
+
+.components .info-card .img-container {
+  position: relative;
+  margin-bottom: 2em;
+}
+
+.components .info-card .img-container::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #FFC222;
+  z-index: 9;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.components .info-card .img-container:hover::before {
+  opacity: 0.6;
+}
+
+.components .info-card .img-container:hover .box-hover::before {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.components .info-card .img-container img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.components .info-card .img-container .box-hover {
+  position: absolute;
+  height: 81%;
+  width: 74%;
+  left: 36px;
+  top: 39px;
+  z-index: 100;
+}
+
+.components .info-card .img-container .box-hover::before {
+  content: "+";
+  display: -ms-inline-grid;
+  display: inline-grid;
+  font-size: 70px;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  outline: 2px solid #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 0;
+}
+
+.components .info-card .img-container .job-title {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+  padding: 10px 20px;
+  font-weight: 600;
+  z-index: 10;
+  background-color: #FFC222;
+  color: #1E1D23;
+}
+
+.components .info-card .personal-info {
+  text-align: center;
+  padding: 0 40px;
+}
+
+.components .info-card .personal-info h2 {
+  color: #1E1D23;
+  font-size: 23px;
+  margin-bottom: 1em;
+}
+
+.components .info-card .personal-info p {
+  color: #999;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+.components .info-card .personal-info ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1em;
+}
+
+.components .info-card .personal-info ul li {
+  padding: 5px 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.components .info-card .personal-info ul li:hover {
+  color: #eeac00;
+}
+
+@media (max-width: 1200px) {
+  .components .info-card {
+    width: 320px;
+  }
+}
+
+@media (max-width: 992px) {
+  .components .info-card {
+    width: 300px;
+  }
+  .components .info-card .personal-info h2 {
+    font-size: 21px;
+  }
+  .components .info-card .personal-info p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .components .info-card {
+    width: 280px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

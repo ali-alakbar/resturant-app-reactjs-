@@ -1,0 +1,32 @@
+@import "../../../../../../App";
+
+
+.food-bar-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3.5em;
+    margin-bottom: 3em;
+    .box{
+        .img-container{
+            width: 100px;
+            margin-bottom: .5em;
+            img{
+                width: 100%;
+            }
+        }
+        .title{
+            text-align: center;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $--mainHeading;
+            transition: $--mainTransition;
+        }
+        &:hover{
+            .title{
+                color: $--mainYellowHover;
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+@import "../../../.././../../App";
+
+
+.box-ads-section{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    padding: 0 30px;
+    .left-section{
+        text-align: center;
+    }
+    .food-box-section{
+        .menu-list-part{
+            ul{
+                display: none;
+            }
+        }
+    }
+}
+
+// ===================
+// Start Screen Responsive 
+// ===================
+/* Medium Screens */
+@media (max-width: 992px) {
+.box-ads-section {
+    display: block;
+        .left-section {
+            display: none;
+        }
+    }
+}
+
+/* Small Screens */
+@media (max-width: 768px) {
+.box-ads-section {
+        .left-section {
+        }
+    }
+}
+
+// ===================
+// End Screen Responsive 
+// ===================

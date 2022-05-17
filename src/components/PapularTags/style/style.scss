@@ -1,0 +1,76 @@
+@import "../../../../../App";
+
+
+.popular-tags {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
+    h2 {
+        padding: 10px 20px;
+    }
+
+    ul {
+        padding: 10px 20px;
+        display: flex;
+        gap: 1em;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 3em;
+
+        a {
+            border: solid 1px $--mainBorder;
+            border-radius: 20px;
+            padding: 8px 20px;
+            font-size: 12px;
+            color: $--mainHeading;
+
+            &:hover {
+                color: $--mainYellowHover;
+                border: solid 1px $--mainYellowHover;
+            }
+        }
+    }
+
+    .adv {
+        background-color: #ffc222;
+        padding: 30px 0 0;
+        text-align: center;
+
+        h2 {
+            font-family: 'Norican', cursive;
+            color: $--mainWhite;
+            font-size: 32px;
+            line-height: 30px;
+            margin-bottom: 0;
+        }
+
+        h3 {
+            color: #00A149;
+            font-size: 50px;
+            line-height: 50px;
+            margin-bottom: .2em;
+        }
+
+        span {
+            display: block;
+            color: $--mainWhite;
+            font-size: 14px;
+            line-height: 13px;
+            margin-bottom: 1em;
+        }
+
+        p {
+            color: #f00000;
+            font-size: 22px;
+            line-height: 25px;
+            font-weight: 700;
+        }
+
+        .img-container {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

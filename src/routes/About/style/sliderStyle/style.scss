@@ -1,0 +1,184 @@
+@import "../../../../App";
+
+
+// For Slider 
+
+.img-container-slider {
+    position: relative;
+    background-image: url("../../media//bg-slider.jpg");
+    background-size: cover;
+    margin-bottom: 8rem;
+    height: 90vh;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: .6;
+    }
+
+    .container {
+        .people-content {
+            display: grid;
+            justify-items: center;
+
+            .img-container {
+                width: 130px;
+                height: 130px;
+                position: relative;
+                margin-bottom: 2em;
+
+                img {
+                    width: 100%;
+                    border-radius: 50%;
+                    z-index: 2;
+
+                }
+
+                .icon-container-slider {
+                    position: absolute;
+                    background-color: $--mainGreen;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    right: 0;
+                    bottom: 0;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            .other-details {
+                text-align: center;
+                padding: 0 150px;
+
+                q {
+                    font-size: 30px;
+                    font-weight: 500;
+                    line-height: 42px;
+                    margin-top: 15px;
+                    margin-bottom: 1em;
+                }
+
+                h2 {
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    line-height: 20px;
+                    letter-spacing: 0;
+                    padding: 25px 0 3px;
+                }
+
+                h3 {
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+            }
+
+        }
+    }
+
+    .awssld {
+        height: 100%;
+
+        .awssld__content {
+            background: transparent;
+            color: $--mainWhite;
+        }
+
+        // Arrow button 
+        .awssld__controls__arrow-right::before,
+        .awssld__controls__arrow-left::before {
+            background-color: $--mainYellow !important;
+        }
+
+        .awssld__controls__arrow-right::after,
+        .awssld__controls__arrow-left::after {
+            background-color: $--mainYellow !important;
+        }
+
+        .awssld__bullets {
+            position: relative;
+            bottom: 50px;
+
+            button {
+                background-color: $--mainYellow;
+                position: relative;
+                z-index: 2;
+            }
+        }
+    }
+}
+
+// ==============
+// Start Responsivity
+// ==============
+
+// Big Screens
+@media (max-width: 1200px) {
+    .img-container-slider {
+        .container {
+            .people-content {
+
+                .img-container {
+                    width: 110px;
+                    height: 110px;
+                }
+
+                .other-details {
+                    padding: 0 100px;
+                    q {
+                        font-size: 24px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+// Medium Screens
+@media (max-width: 992px) {
+.img-container-slider {
+    .container {
+        .people-content {
+            .other-details {
+
+                q {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+}
+
+// Small Screens
+@media (max-width: 768px) {
+    .img-container-slider {
+        .container {
+            padding: 0;
+            .people-content {
+
+                .img-container {
+                    width: 100px;
+                    height: 100px;
+                }
+                .other-details {
+                    padding: 0px 30px;
+                    q {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ==============
+// End Responsivity
+// ==============

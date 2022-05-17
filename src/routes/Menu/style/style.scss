@@ -1,0 +1,296 @@
+@import "../../../App";
+
+
+
+.menu-section{
+
+    position: relative;
+
+    // ======================= Start box-of-food =======================
+
+    .box-of-food{
+        .img-container-bg{
+            img{
+                position: absolute;
+                left: 50%;
+                top: 40%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+    // ======================= End box-of-food =======================
+    // ======================= Start Exploring Conponent =======================
+    .expolring-things{
+            position: relative;
+            display: grid;
+            align-items: center;
+            text-align: center;
+            grid-template-columns: 50% 50%;
+            grid-auto-flow: dense;
+            direction: ltr;
+            padding: 50px 0;
+            height: 110vh;
+            // Stylling both sides
+            .side{
+                position: relative;
+                height: 100%;
+                width: 100%;
+                background-position-x: center;
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: #000;
+                }
+            }
+            // ======================
+            // ======================
+            // ======================
+            .left-side{
+                background-image: url("../media/bg-one.jpg");
+                &::after{
+                    opacity: .6;
+                }
+
+                h1{
+                    color: $--mainWhite;
+                    font-size: 52px;
+                    text-shadow: 1px 0 5px #000;
+                    z-index: 3;
+                    margin-bottom: .5em;
+                }
+                p{
+                    color: $--mainWhite;
+                    font-size: 20px;
+                    text-shadow: 1px 0 5px #000;
+                    z-index: 3;
+                    margin-bottom: 1em;
+                }
+                button{
+                    @include btn();
+                    width: 150px;
+                    z-index: 3;
+                }
+            }
+            // ==================
+            // ==================
+            // ==================
+            .right-side{
+                background-image: url("../media/bg-two.png");
+                background-color: #f7f4ef;
+                &::after {
+                    opacity: 0;
+                }
+                .box{
+                    z-index: 3;
+                    width: 350px;
+                    margin-bottom: 2em;
+                    .wrapper-upper{
+                        width: 100%;
+                        border-bottom: dashed 1px $--mainLightGray;
+                        margin-bottom: .5em;
+                        h3{
+                            font-size: 24px;
+                            font-weight: 800;
+                        }
+                        h3:nth-child(1){
+                            color: $--mainHeading;
+                            line-height: 24px;
+                        }
+                        h3:nth-child(2){
+                            color: $--mainYellowHover;
+                        }
+                    }
+                    .ingre{
+                        p{
+                            font-weight: 600;
+                            color: $--mainLightGray;
+                            text-align: start;
+                        }
+                    }
+                }
+            }
+    }
+// ==================== End Exploring Conponent =======================
+// ==================== Start Delivery Conponent ======================
+    .delivery-section{
+        display: flex;
+        gap: 1em;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 4em;
+        padding: 50px 40px;
+        .box{
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+            width: 30%;
+            height: 25vh;
+            border: dashed 3px $--mainBorder;
+            border-radius: 10px;
+            align-items: center;
+            padding: 0 30px;
+            transition: $--mainTransition;
+            &:hover{
+                border: dashed 3px $--mainYellow;
+            }
+            .icon-container{
+                transition: $--mainTransition;
+                transform: scale(1);
+                &:hover{
+                    transform: scale(1.1);
+                }
+                svg{
+                    font-size: 68px;
+                    color: $--mainYellow;
+                }
+            }
+            .other-content{
+                h3{
+                    color: $--mainHeading;
+                    font-size: 18px;
+                }
+                p{
+                    color: $--mainLightGray;
+                    font-size: 14px;
+                    padding-right: 20px;
+                    line-height: 2;
+                }
+            }
+        }
+    }
+}
+
+// ============================
+/* Big Screens */
+// ============================
+@media (max-width: 1200px) {
+    .menu-section {
+        .delivery-section {
+            .box {
+                width: 40% ;
+                .icon-container {
+                    svg {
+                        font-size: 50px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+// ============================
+/* Medium Screens */
+// ============================
+@media (max-width: 992px) {
+    .menu-section {
+        // ====================================
+        .menu-list-part {
+            h1 {
+                font-size: 30px;
+            }
+            ul {
+                li {
+                    padding: 18px;
+                }
+            }
+        }
+        // ====================================
+        .expolring-things{
+            .left-side {
+                h1{
+                    font-size: 35px;
+                }
+                p{
+                    font-size: 17px;
+                }
+                button{
+                    padding: 10px;
+                    width: 120px;
+                }
+            }
+            .right-side {
+                .box {
+                    .wrapper-upper {
+                        h3 {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // ==================== Start Delivery Conponent ======================
+    .delivery-section {
+        .box {
+            width: 47% !important;
+            .icon-container {
+                svg {
+                    font-size: 40px !important;
+                }
+            }
+        }
+    }
+}
+// ========================
+/* Small Screens */
+// ========================
+@media (max-width: 768px) {
+    .menu-section {
+        // ====================================
+        .menu-list-part {
+            h1 {
+                font-size: 20px;
+            }
+            ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                
+                li {
+                    padding: 18px;
+                }
+            }
+        }
+        // ====================================
+        .expolring-things {
+            grid-template-rows: 50% 50% !important;
+            direction: rtl !important;
+            grid-template-columns: auto !important;
+            height: 200vh;
+            .left-side {
+                h1 {
+                    font-size: 30px;
+                }
+            }
+            .right-side {
+                .box {
+                    padding: 0 20px;
+                    .wrapper-upper {
+                        h3 {
+                            font-size: 18px;
+                        }
+                    }
+                    .ingre{
+                        p{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // ==================== Start Delivery Conponent ======================
+    .delivery-section {
+        .box {
+            width: 100% !important;
+        }
+    }
+}

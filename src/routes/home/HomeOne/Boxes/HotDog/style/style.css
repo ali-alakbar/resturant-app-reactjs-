@@ -1,0 +1,285 @@
+/* Start Screen Responsive */
+/* Small Screens */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Big Screens */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* End Screen Responsive */
+.container {
+  padding: 0 80px;
+  margin: 0 auto;
+}
+
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Gilroy', sans-serif;
+}
+
+input, textarea {
+  outline: none;
+}
+
+.section {
+  padding-top: 100px;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+a {
+  color: #999;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #eeac00;
+}
+
+.App {
+  position: relative;
+  overflow: hidden;
+}
+
+/* medium Screens */
+@media (max-width: 1200px) {
+  .App {
+    padding-bottom: 75px;
+  }
+}
+
+.hotdog-section {
+  position: relative;
+  height: 90vh;
+  overflow: hidden;
+  width: 100%;
+  background-image: url("../../../media/bg-offer-2.jpg");
+  background-position: center center;
+  background-size: cover;
+  padding: 0 30px;
+  margin-bottom: 4rem;
+}
+
+.hotdog-section .img-container {
+  position: absolute;
+  bottom: -70px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.hotdog-section .img-container img {
+  width: 65rem;
+}
+
+.hotdog-section .other-content {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  z-index: 10;
+}
+
+.hotdog-section .other-content .content-wrapper {
+  position: relative;
+}
+
+.hotdog-section .other-content .content-wrapper .thunder-wrapper {
+  position: absolute;
+  left: 65%;
+  top: -1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hotdog-section .other-content .content-wrapper h1 {
+  font-family: 'Norican', cursive;
+  color: #fff;
+  font-size: 42px;
+  line-height: 45px;
+  text-shadow: 3px 0 4px #000;
+}
+
+.hotdog-section .other-content .content-wrapper h2 {
+  color: #ffcd02;
+  font-size: 120px;
+  text-transform: uppercase;
+  line-height: 125px;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 50px;
+}
+
+.hotdog-section .other-content .content-wrapper .btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.hotdog-section .other-content .content-wrapper .btn-container .goto-menu {
+  color: #1E1D23;
+  background-color: #FFC222;
+  font-size: 12px !important;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  line-height: normal !important;
+  border: solid 3px #FFC222;
+  padding: 15px;
+  width: 100%;
+  border-radius: 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 140px;
+}
+
+.hotdog-section .other-content .content-wrapper .btn-container .goto-menu:hover {
+  background-color: #fff;
+}
+
+.hotdog-section .other-content .cloud-offer-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hotdog-section .other-content .cloud-offer-wrapper .cloud-offer {
+  background-image: url("../../../media/cloud-offer.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hotdog-section .other-content .cloud-offer-wrapper .cloud-offer .content {
+  position: relative;
+  left: -1em;
+  top: -1em;
+}
+
+.hotdog-section .other-content .cloud-offer-wrapper .cloud-offer .content h1 {
+  font-family: 'Norican', cursive;
+  font-size: 16px;
+}
+
+.hotdog-section .other-content .cloud-offer-wrapper .cloud-offer .content p {
+  font-size: 40px;
+  line-height: 40px;
+  color: #1E1D23;
+  font-weight: 800;
+}
+
+.hotdog-section .other-content .cloud-offer-wrapper .cloud-offer .content p span {
+  color: #ffcd02;
+}
+
+/* Medium Screens */
+@media (max-width: 992px) {
+  .hotdog-section .other-content .content-wrapper h1 {
+    font-size: 30px;
+  }
+  .hotdog-section .other-content .content-wrapper h2 {
+    font-size: 80px;
+  }
+  .hotdog-section .other-content .cloud-offer-wrapper .cloud-offer .content h1 {
+    font-size: 14px;
+  }
+  .hotdog-section .other-content .cloud-offer-wrapper .cloud-offer .content p {
+    font-size: 35px;
+  }
+}
+
+/* Small Screens */
+@media (max-width: 768px) {
+  .hotdog-section {
+    height: 100vh;
+  }
+  .hotdog-section .other-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .hotdog-section .other-content .content-wrapper {
+    display: -ms-inline-grid;
+    display: inline-grid;
+    justify-items: center;
+    padding: 4em 0;
+  }
+  .hotdog-section .other-content .content-wrapper .thunder-wrapper {
+    top: 3.5em;
+  }
+  .hotdog-section .other-content .content-wrapper h1 {
+    font-size: 25px;
+  }
+  .hotdog-section .other-content .content-wrapper h2 {
+    font-size: 65px;
+    margin-bottom: 0;
+  }
+  .hotdog-section .other-content .cloud-offer-wrapper .cloud-offer .content {
+    position: relative;
+    left: -1em;
+    top: -1em;
+  }
+  .hotdog-section .other-content .cloud-offer-wrapper .cloud-offer .content h1 {
+    font-size: 14px;
+  }
+  .hotdog-section .other-content .cloud-offer-wrapper .cloud-offer .content p {
+    font-size: 30px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

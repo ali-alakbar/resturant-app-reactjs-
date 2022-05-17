@@ -1,0 +1,909 @@
+{
+
+
+  "home":{
+    "smallBox":[
+      {
+        "color":"green",
+        "img":"./media/nugget-main.png",
+        "h1":"Fast Food",
+        "h2":"Meals",
+        "h3":"new phenomenon burger taste",
+        "p":"19.22"
+      },
+      {
+        "color":"orange",
+        "img":"./media/burger-main.png",
+        "h1":"House",
+        "h2":"Burgers",
+        "h3":"new phenomenon burger taste",
+        "p":"19.22"
+      },
+      {
+        "color":"yellow",
+        "img":"./media/salad-main.png",
+        "h1":"Hot Fresh",
+        "h2":"Salats",
+        "h3":"new phenomenon burger taste",
+        "p":"19.22"
+      }
+    ],
+    "box":[
+      {
+        "h1":"Any day offers",
+        "h2":"New Phenomenon burder taste",
+        "price":"12.90",
+        "mainImg":"./media/burger.png",
+        "bgBanner":"./media/banner-orange.png",
+        "isPrice":true,
+        "offsetDuration": 900 
+
+      },
+      {
+        "green-bg":"green",
+        "h1":"Other Flavors",
+        "h2":"Save Room, We Made Taste",
+        "price":"6.32",
+        "mainImg":"./media/meal.png",
+        "bgBanner":"./media/banner-white.png",
+        "isPrice":true,
+        "offsetDuration": 1000
+      },
+      {
+        "h1":"Find a Poco store near you",
+        "h2":"Contact us",
+        "mainImg":"./media/location.png",
+        "bgBanner":"./media/banner-white.png",
+        "isPrice":false,
+        "offsetDuration": 1800
+
+      }
+    ]
+  },
+
+
+  "delivery":[
+    {
+      "id":1,
+      "h3":"Free Shipping",
+      "p":"Sign up for updates and get free shipping",
+      "icon":"faMotorcycle"
+    },
+    {
+      "id":2,
+      "h3":" 30 Minutes Delivery",
+      "p":"Everything you order will quickly delivered to your door.",
+      "icon":"faClock"
+    },
+    {
+      "id":3,
+      "h3":" Best Quality Guarantee",
+      "p":"Poco is an international chain of family restaurants.",
+      "icon":"faPizzaSlice"
+    }
+  ],
+
+
+  "slider":[
+    {
+      "img":"./media/avatar-1.jpg",
+      "quote":"Without food, we would have gone bankrupt by now. Thanks food! The service was excellent.",
+      "name":"Ali Akbar",
+      "position":"Manager"
+    },
+     {
+      "img":"./media/avatar-2.jpg",
+      "quote":"Without food, we would have gone bankrupt by now. Thanks food! The service was excellent.",
+      "name":"John Doe",
+      "position":"Chief"
+    },
+     {
+      "img":"./media/avatar-3.jpg",
+      "quote":"Without food, we would have gone bankrupt by now. Thanks food! The service was excellent.",
+      "name":"Steve Jobs",
+      "position":"CEO, Apple"
+    },
+    {
+      "img":"./media/avatar-4.jpg",
+      "quote":"Without food, we would have gone bankrupt by now. Thanks food! The service was excellent.",
+      "name":"Mark Twin",
+      "position":"Writer"
+    }
+
+  ],
+  "about":[
+    {
+      "h1": "Our Quality",
+      "h2": "Chicken",
+      "p": "Quality is our #1 ingredient. That’s why our Chicken Wings, Chicken Bites and Grilled Chicken Topping are made from chickens raised without antibiotics and fed an all vegetable-grain diet, with no animal by-products. Plus, our Bites are made with 100% chicken breast meat.",
+      "btn": "Order Now",
+      "direction": "ltr",
+      "thereImg": false,
+      "imgOne": "./media/about-imager-5.png",
+      "imgTwo": "",
+      "imgThree": "",
+      "pngImgOne": "./media/bg.png",
+      "pngImgTwo": "./media/vector2-h3.png",
+      "aos":"left"
+    },    
+    {
+      "h1": "Our Quality",
+      "h2": "Burger",
+      "p": "Some of the world’s best cheese is made close to home! All our deliciously melty Mozzarella is made with 100% Canadian milk. We’re proud to support Canadian dairy farmers.",
+      "btn": "Order Now",
+      "direction": "rtl",
+      "thereImg": false,
+      "imgOne": "./media/about-imager-6.png",
+      "imgTwo": "",
+      "imgThree": "",
+      "pngImgOne": "./media/bg.png",
+      "pngImgTwo": "/media/vector3-h3.png",
+      "aos":"right"
+
+    },    
+    {
+      "h1": "Our Quality",
+      "h2": "Pizza Douch",
+      "p": "Quality is our #1 ingredient. That’s why our Chicken Wings, Chicken Bites and Grilled Chicken Topping are made from chickens raised without antibiotics and fed an all vegetable-grain diet, with no animal by-products. Plus, our Bites are made with 100% chicken breast meat.",
+      "btn": "Order Now",
+      "direction": "ltr",
+      "thereImg": false,
+      "imgOne": "./media/about-imager-7.png",
+      "imgTwo": "",
+      "imgThree": "",
+      "pngImgOne": "./media/bg.png",
+      "pngImgTwo": "./media/vector2-h3.png",
+      "aos":"left"
+
+    }
+  ]
+
+  ,
+  "products": [
+    {
+      "id": 1,
+      "icon": "./media/burger2.png",
+      "foodTitle": "Burger",
+      "idDiscount": false,
+      "price": 5,
+      "discountPrice": 100,
+      "date": "September 28, 2021",
+      "isWhite": true
+    },
+      {
+      "id": 2,
+      "icon": "./media/burger.png",
+      "foodTitle": "Hot Dog",
+      "idDiscount": true,
+      "price": 35,
+      "discountPrice": 80,
+      "date": "September 28, 2021",
+      "isWhite": false
+    },
+    {
+      "id": 3,
+      "icon": "./media/drink.png",
+      "foodTitle": "Drink",
+      "idDiscount": false,
+      "price": 3,
+      "discountPrice": 100,
+      "date": "September 28, 2021",
+      "isWhite": true
+    },
+      {
+      "id": 4,
+      "icon": "./media/latte.png",
+      "foodTitle": "Latte",
+      "idDiscount": true,
+      "price": 23,
+      "discountPrice": 80,
+      "date": "September 28, 2021",
+      "isWhite": false
+    },
+    {
+      "id": 5,
+      "icon": "./media/spag.png",
+      "foodTitle": "Spagutiee",
+      "idDiscount": false,
+      "price": 5,
+      "discountPrice": 100,
+      "date": "September 28, 2021",
+      "isWhite": true
+    },
+    {
+      "id": 3,
+      "icon": "./media/pizza.png",
+      "foodTitle": "Drink",
+      "idDiscount": false,
+      "price": 3,
+      "discountPrice": 100,
+      "date": "September 28, 2021",
+      "isWhite": true
+    },
+      {
+      "id": 4,
+      "icon": "./media/moca.png",
+      "foodTitle": "Moca",
+      "idDiscount": true,
+      "price": 23,
+      "discountPrice": 80,
+      "date": "September 28, 2021",
+      "isWhite": false
+    },
+    {
+      "id": 5,
+      "icon": "./media/icecream.png",
+      "foodTitle": "Ice Cream",
+      "idDiscount": false,
+      "price": 5,
+      "discountPrice": 100,
+      "date": "September 28, 2021",
+      "isWhite": true
+    },
+    {
+      "id": 3,
+      "icon": "./media/drink.png",
+      "foodTitle": "Drink",
+      "idDiscount": false,
+      "price": 3,
+      "discountPrice": 100,
+      "date": "September 28, 2021",
+      "isWhite": true
+    },
+      {
+      "id": 4,
+      "icon": "./media/latte.png",
+      "foodTitle": "Latte",
+      "idDiscount": true,
+      "price": 23,
+      "discountPrice": 80,
+      "date": "September 28, 2021",
+      "isWhite": false
+    },
+    {
+      "id": 5,
+      "icon": "./media/spag.png",
+      "foodTitle": "Spagutiee",
+      "idDiscount": false,
+      "price": 5,
+      "discountPrice": 100,
+      "date": "September 28, 2021",
+      "isWhite": true
+    },
+    {
+      "id": 3,
+      "icon": "./media/drink.png",
+      "foodTitle": "Drink",
+      "idDiscount": false,
+      "price": 3,
+      "discountPrice": 100,
+      "date": "September 28, 2021",
+      "isWhite": true
+    },
+      {
+      "id": 4,
+      "icon": "./media/latte.png",
+      "foodTitle": "Latte",
+      "idDiscount": true,
+      "price": 23,
+      "discountPrice": 80,
+      "date": "September 28, 2021",
+      "isWhite": false
+    },
+    {
+      "id": 5,
+      "icon": "./media/spag.png",
+      "foodTitle": "Spagutiee",
+      "idDiscount": false,
+      "price": 5,
+      "discountPrice": 100,
+      "date": "September 28, 2021",
+      "isWhite": true
+    },
+    {
+      "id": 3,
+      "icon": "./media/drink.png",
+      "foodTitle": "Drink",
+      "idDiscount": false,
+      "price": 3,
+      "discountPrice": 100,
+      "date": "September 28, 2021",
+      "isWhite": true
+    },
+      {
+      "id": 4,
+      "icon": "./media/latte.png",
+      "foodTitle": "Latte",
+      "idDiscount": true,
+      "price": 23,
+      "discountPrice": 80,
+      "date": "September 28, 2021",
+      "isWhite": false
+    },
+    {
+      "id": 5,
+      "icon": "./media/spag.png",
+      "foodTitle": "Spagutiee",
+      "idDiscount": false,
+      "price": 5,
+      "discountPrice": 100,
+      "date": "September 28, 2021",
+      "isWhite": true
+    },
+    {
+      "id": 3,
+      "icon": "./media/drink.png",
+      "foodTitle": "Drink",
+      "idDiscount": false,
+      "price": 3,
+      "discountPrice": 100,
+      "date": "September 28, 2021",
+      "isWhite": true
+    },
+      {
+      "id": 4,
+      "icon": "./media/latte.png",
+      "foodTitle": "Latte",
+      "idDiscount": true,
+      "price": 23,
+      "discountPrice": 80,
+      "date": "September 28, 2021",
+      "isWhite": false
+    },
+    {
+      "id": 5,
+      "icon": "./media/spag.png",
+      "foodTitle": "Spagutiee",
+      "idDiscount": false,
+      "price": 5,
+      "discountPrice": 100,
+      "date": "September 28, 2021",
+      "isWhite": true
+    },
+    {
+      "id": 3,
+      "icon": "./media/drink.png",
+      "foodTitle": "Drink",
+      "idDiscount": false,
+      "price": 3,
+      "discountPrice": 100,
+      "date": "September 28, 2021",
+      "isWhite": true
+    },
+      {
+      "id": 4,
+      "icon": "./media/latte.png",
+      "foodTitle": "Latte",
+      "idDiscount": true,
+      "price": 23,
+      "discountPrice": 80,
+      "date": "September 28, 2021",
+      "isWhite": false
+    },
+    {
+      "id": 5,
+      "icon": "./media/spag.png",
+      "foodTitle": "Spagutiee",
+      "idDiscount": false,
+      "price": 5,
+      "discountPrice": 100,
+      "date": "September 28, 2021",
+      "isWhite": true
+    },
+     {
+      "id": 3,
+      "icon": "./media/drink.png",
+      "foodTitle": "Drink",
+      "idDiscount": false,
+      "price": 3,
+      "discountPrice": 100,
+      "date": "September 28, 2021",
+      "isWhite": true
+    },
+      {
+      "id": 4,
+      "icon": "./media/latte.png",
+      "foodTitle": "Latte",
+      "idDiscount": true,
+      "price": 23,
+      "discountPrice": 80,
+      "date": "September 28, 2021",
+      "isWhite": false
+    },
+    {
+      "id": 5,
+      "icon": "./media/spag.png",
+      "foodTitle": "Spagutiee",
+      "idDiscount": false,
+      "price": 5,
+      "discountPrice": 100,
+      "date": "September 28, 2021",
+      "isWhite": true
+    },
+      {
+      "id": 6,
+      "icon": "./media/pizza.png",
+      "foodTitle": "Pizza",
+      "idDiscount": true,
+      "price": 35,
+      "discountPrice": 80,
+      "date": "September 28, 2021",
+      "isWhite": false
+    },
+      {
+      "id": 7,
+      "icon": "./media/burger2.png",
+      "foodTitle": "Beacon Burger",
+      "idDiscount": false,
+      "price": 3,
+      "discountPrice": 100,
+      "date": "September 28, 2021",
+      "isWhite": true
+    },
+     {
+      "id": 3,
+      "icon": "./media/drink.png",
+      "foodTitle": "Drink",
+      "idDiscount": false,
+      "price": 3,
+      "discountPrice": 100,
+      "date": "September 28, 2021",
+      "isWhite": true
+    },
+      {
+      "id": 4,
+      "icon": "./media/latte.png",
+      "foodTitle": "Latte",
+      "idDiscount": true,
+      "price": 23,
+      "discountPrice": 80,
+      "date": "September 28, 2021",
+      "isWhite": false
+    },
+    {
+      "id": 5,
+      "icon": "./media/spag.png",
+      "foodTitle": "Spagutiee",
+      "idDiscount": false,
+      "price": 5,
+      "discountPrice": 100,
+      "date": "September 28, 2021",
+      "isWhite": true
+    },
+      {
+      "id": 6,
+      "icon": "./media/pizza.png",
+      "foodTitle": "Pizza",
+      "idDiscount": true,
+      "price": 35,
+      "discountPrice": 80,
+      "date": "September 28, 2021",
+      "isWhite": false
+    },
+      {
+      "id": 7,
+      "icon": "./media/burger2.png",
+      "foodTitle": "Beacon Burger",
+      "idDiscount": false,
+      "price": 3,
+      "discountPrice": 100,
+      "date": "September 28, 2021",
+      "isWhite": true
+    },
+
+    
+    {
+      "id": 3,
+      "icon": "./media/drink.png",
+      "foodTitle": "Drink",
+      "idDiscount": false,
+      "price": 3,
+      "discountPrice": 100,
+      "date": "September 28, 2021",
+      "isWhite": true
+    },
+      {
+      "id": 4,
+      "icon": "./media/latte.png",
+      "foodTitle": "Latte",
+      "idDiscount": true,
+      "price": 23,
+      "discountPrice": 80,
+      "date": "September 28, 2021",
+      "isWhite": false
+    },
+    {
+      "id": 5,
+      "icon": "./media/spag.png",
+      "foodTitle": "Spagutiee",
+      "idDiscount": false,
+      "price": 5,
+      "discountPrice": 100,
+      "date": "September 28, 2021",
+      "isWhite": true
+    },
+      {
+      "id": 6,
+      "icon": "./media/pizza.png",
+      "foodTitle": "Pizza",
+      "idDiscount": true,
+      "price": 35,
+      "discountPrice": 80,
+      "date": "September 28, 2021",
+      "isWhite": false
+    },
+
+    
+    {
+      "id": 3,
+      "icon": "./media/drink.png",
+      "foodTitle": "Drink",
+      "idDiscount": false,
+      "price": 3,
+      "discountPrice": 100,
+      "date": "September 28, 2021",
+      "isWhite": true
+    },
+      {
+      "id": 4,
+      "icon": "./media/latte.png",
+      "foodTitle": "Latte",
+      "idDiscount": true,
+      "price": 23,
+      "discountPrice": 80,
+      "date": "September 28, 2021",
+      "isWhite": false
+    },
+    {
+      "id": 5,
+      "icon": "./media/spag.png",
+      "foodTitle": "Spagutiee",
+      "idDiscount": false,
+      "price": 5,
+      "discountPrice": 100,
+      "date": "September 28, 2021",
+      "isWhite": true
+    },
+      {
+      "id": 6,
+      "icon": "./media/pizza.png",
+      "foodTitle": "Pizza",
+      "idDiscount": true,
+      "price": 35,
+      "discountPrice": 80,
+      "date": "September 28, 2021",
+      "isWhite": false
+    },
+
+    
+    {
+      "id": 3,
+      "icon": "./media/drink.png",
+      "foodTitle": "Drink",
+      "idDiscount": false,
+      "price": 3,
+      "discountPrice": 100,
+      "date": "September 28, 2021",
+      "isWhite": true
+    },
+      {
+      "id": 4,
+      "icon": "./media/latte.png",
+      "foodTitle": "Latte",
+      "idDiscount": true,
+      "price": 23,
+      "discountPrice": 80,
+      "date": "September 28, 2021",
+      "isWhite": false
+    },
+    {
+      "id": 5,
+      "icon": "./media/spag.png",
+      "foodTitle": "Spagutiee",
+      "idDiscount": false,
+      "price": 5,
+      "discountPrice": 100,
+      "date": "September 28, 2021",
+      "isWhite": true
+    },
+      {
+      "id": 6,
+      "icon": "./media/pizza.png",
+      "foodTitle": "Pizza",
+      "idDiscount": true,
+      "price": 35,
+      "discountPrice": 80,
+      "date": "September 28, 2021",
+      "isWhite": false
+    },
+
+    
+    {
+      "id": 3,
+      "icon": "./media/drink.png",
+      "foodTitle": "Drink",
+      "idDiscount": false,
+      "price": 3,
+      "discountPrice": 100,
+      "date": "September 28, 2021",
+      "isWhite": true
+    },
+      {
+      "id": 4,
+      "icon": "./media/latte.png",
+      "foodTitle": "Latte",
+      "idDiscount": true,
+      "price": 23,
+      "discountPrice": 80,
+      "date": "September 28, 2021",
+      "isWhite": false
+    },
+    {
+      "id": 5,
+      "icon": "./media/spag.png",
+      "foodTitle": "Spagutiee",
+      "idDiscount": false,
+      "price": 5,
+      "discountPrice": 100,
+      "date": "September 28, 2021",
+      "isWhite": true
+    },
+      {
+      "id": 6,
+      "icon": "./media/pizza.png",
+      "foodTitle": "Pizza",
+      "idDiscount": true,
+      "price": 35,
+      "discountPrice": 80,
+      "date": "September 28, 2021",
+      "isWhite": false
+    },
+      {
+      "id": 3,
+      "icon": "./media/drink.png",
+      "foodTitle": "Drink",
+      "idDiscount": false,
+      "price": 3,
+      "discountPrice": 100,
+      "date": "September 28, 2021",
+      "isWhite": true
+    },
+      {
+      "id": 4,
+      "icon": "./media/latte.png",
+      "foodTitle": "Latte",
+      "idDiscount": true,
+      "price": 23,
+      "discountPrice": 80,
+      "date": "September 28, 2021",
+      "isWhite": false
+    },
+    {
+      "id": 5,
+      "icon": "./media/spag.png",
+      "foodTitle": "Spagutiee",
+      "idDiscount": false,
+      "price": 5,
+      "discountPrice": 100,
+      "date": "September 28, 2021",
+      "isWhite": true
+    },
+      {
+      "id": 6,
+      "icon": "./media/pizza.png",
+      "foodTitle": "Pizza",
+      "idDiscount": true,
+      "price": 35,
+      "discountPrice": 80,
+      "date": "September 28, 2021",
+      "isWhite": false
+    },
+      {
+      "id": 7,
+      "icon": "./media/burger2.png",
+      "foodTitle": "Beacon Burger",
+      "idDiscount": false,
+      "price": 3,
+      "discountPrice": 100,
+      "date": "September 28, 2021",
+      "isWhite": true
+    }
+  ],
+  "terms":[
+    {
+      "img":"./media/box-team-1-2.jpg",
+      "jobTitle": "Manager",
+      "name": "John Doe",
+      "description": "Everything Here Is Food, We Love You And You Love Food.",
+      "aosDuration": "300"
+    },
+    {
+      "img":"./media/box-team-6-1.jpg",
+      "jobTitle": "Chef",
+      "name": "William Smith",
+      "description": "Everything Here Is Food, We Love You And You Love Food.",
+      "aosDuration": "900"
+    },
+    {
+      "img":"./media/box-team-2-1.jpg",
+      "jobTitle": "Manager",
+      "name": "Bradd L.",
+      "description": "Everything Here Is Food, We Love You And You Love Food.",
+      "aosDuration": "300"
+    },
+    {
+      "img":"./media/box-team-4-2.jpg",
+      "jobTitle": "Chef",
+      "name": "Martin J.",
+      "description": "Everything Here Is Food, We Love You And You Love Food.",
+      "aosDuration": "300"
+    },
+    {
+      "img":"./media/box-team-5-1.jpg",
+      "jobTitle": "Chef",
+      "name": "William Smith",
+      "description": "Everything Here Is Food, We Love You And You Love Food.",
+      "aosDuration": "900"
+    },
+    {
+      "img":"./media/box-team-3-1.jpg",
+      "jobTitle": "Manager",
+      "name": "Bradd L.",
+      "description": "Everything Here Is Food, We Love You And You Love Food.",
+      "aosDuration": "300"
+    },
+    {
+      "img":"./media/box-team-4-2.jpg",
+      "jobTitle": "Chef",
+      "name": "Martin J.",
+      "description": "Everything Here Is Food, We Love You And You Love Food.",
+      "aosDuration": "1000"
+    }
+
+  ],
+  "history":[
+    {
+      "id": 1,
+      "padding":"0 90px 0 0",
+      "year": "1960",
+      "direction":"rtl",
+      "img":"./media/history_1960.jpg",
+      "title": "The beginning",
+      "description": "Tom Managhan and brother, James bough “PocoNick’s” – a pizza restaurant at Ypsilanti Mich with the price of 500 dollar and changed its name to “Poco , Inc."
+    },
+    {
+      "id": 2,
+      "padding":"0 0 0 90px",
+      "year": "1968",
+      "direction":"ltr",
+      "img":"./media/history_1968.jpg",
+      "title": "Bad Luck",
+      "description": "In 1968, Poco Pizza headquarter burn down by fire. In 1975, Amstar Corp, a sugar supplier name Poco sued Poco's Pizza for the name of Poco."
+    },
+    {
+      "id": 3,
+      "padding":"0 90px 0 0",
+      "year": "1980",
+      "direction":"rtl",
+      "img":"./media/history_1980.jpg",
+      "title": "Growing",
+      "description": "Poco Pizza opened more 954 stores, increased total stores to 2,841 and became the fastest-growing pizza chain in the United States. The first Poco Pizza store opened in the United Kingdom, in Luton The Deep Pan Pizza."
+    },
+    {
+      "id": 4,
+      "padding":"0 0 0 90px",
+      "year": "1990",
+      "direction":"ltr",
+      "img":"./media/history_1990.jpg",
+      "title": "Online Order",
+      "description": "Poco Pizza opened more 954 stores, increased total stores to 2,841 and became the fastest-growing pizza chain in the United States. The first Poco Pizza store opened in the United Kingdom, in Luton The Deep Pan Pizza."
+    },
+    {
+      "id": 5,
+      "padding":"0 90px 0 0",
+      "year": "2010",
+      "direction":"rtl",
+      "img":"./media/history_2010.jpg",
+      "title": "2,000th Store",
+      "description": "Poco Pizza International opened its 2,000th store outside the United States. Domino's celebrates 40 years of development around the world. At the same time, global sales reach more than $ 3.54 billion."
+    },
+    {
+      "id": 6,
+      "padding":"0 0 0 90px",
+      "year": "2020",
+      "direction":"ltr",
+      "img":"./media/history_2020.jpg",
+      "title": "60 Years Celebrating",
+      "description": "In 2010, Poco Pizza celebrated 50 years of operating. First store opened in Vietnam on 19 November 2010."
+    
+    }
+  ],
+  "blog":{
+    "categories":[
+      {
+        "foodName":"Burgers"
+      },
+      {
+        "foodName":"Cold Drinks"
+      },
+      {
+        "foodName":"Pizza"
+      }
+    ],
+     "posts":[
+      {
+        "img":"/media/blog-2-1000x565.jpg",
+        "small_img":"./media/52-1-450x450.png",
+        "postBy":"namdam",
+        "isThreeHide": true,
+        "date":"Sep 7, 2020",
+        "title":"10 Reasons To Do A Digital Detox Challenge",
+        "details":"Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius per a augue magna hac. Nec hac et vestibulum duis a tincidunt per a aptent interdum purus feugiat a id aliquet erat himenaeos nunc torquent euismod adipiscing adipiscing dui gravida justo."
+      },
+      {
+        "img":"/media/blog-6-1000x565.jpg",
+        "small_img":"./media/54.1-450x450.png",
+        "postBy":"namdam",
+        "isThreeHide": false,
+        "date":"June 12, 2020",
+        "title":"Traditional Soft Pretzels with Sweet Beer Cheese",
+        "details":"Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius per a augue magna hac. Nec hac et vestibulum duis a tincidunt per a aptent interdum purus feugiat a id aliquet erat himenaeos nunc torquent euismod adipiscing adipiscing dui gravida justo."
+      },
+      {
+        "img":"/media/blog-7-1000x565.jpg",
+        "small_img":"./media/53-1-450x450.png",
+        "postBy":"namdam",
+        "isThreeHide": true,
+        "date":"Oct 15, 2020",
+        "title":"Traditional Soft Pretzels with Sweet Beer Cheese",
+        "details":"Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius per a augue magna hac. Nec hac et vestibulum duis a tincidunt per a aptent interdum purus feugiat a id aliquet erat himenaeos nunc torquent euismod adipiscing adipiscing dui gravida justo."
+      },
+      {
+        "img":"/media/blog-9-1000x565.jpg",
+        "small_img":"./media/53-1-450x450.png",
+        "postBy":"namdam",
+        "isThreeHide": true,
+        "date":"March 27, 2022",
+        "title":"My Favorite Easy Black Pizza Toast Recipe",
+        "details":"Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius per a augue magna hac. Nec hac et vestibulum duis a tincidunt per a aptent interdum purus feugiat a id aliquet erat himenaeos nunc torquent euismod adipiscing adipiscing dui gravida justo."
+      },
+      {
+        "img":"/media/blog-6-1000x565.jpg",
+        "small_img":"./media/52-1-450x450.png",
+        "postBy":"namdam",
+        "isThreeHide": false,
+        "date":"June 12, 2020",
+        "title":"Traditional Soft Pretzels with Sweet Beer Cheese",
+        "details":"Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius per a augue magna hac. Nec hac et vestibulum duis a tincidunt per a aptent interdum purus feugiat a id aliquet erat himenaeos nunc torquent euismod adipiscing adipiscing dui gravida justo."
+      },
+      {
+        "img":"/media/blog-7-1000x565.jpg",
+        "small_img":"./media/52-1-450x450.png",
+        "postBy":"namdam",
+        "isThreeHide": true,
+        "date":"Oct 15, 2020",
+        "title":"Traditional Soft Pretzels with Sweet Beer Cheese",
+        "details":"Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius per a augue magna hac. Nec hac et vestibulum duis a tincidunt per a aptent interdum purus feugiat a id aliquet erat himenaeos nunc torquent euismod adipiscing adipiscing dui gravida justo."
+      },
+      {
+        "img":"/media/blog-9-1000x565.jpg",
+        "small_img":"./media/52-1-450x450.png",
+        "postBy":"namdam",
+        "isThreeHide": true,
+        "date":"March 27, 2022",
+        "title":"My Favorite Easy Black Pizza Toast Recipe",
+        "details":"Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius per a augue magna hac. Nec hac et vestibulum duis a tincidunt per a aptent interdum purus feugiat a id aliquet erat himenaeos nunc torquent euismod adipiscing adipiscing dui gravida justo."
+      }
+      ,
+      {
+        "img":"/media/blog-2-1000x565.jpg",
+        "small_img":"./media/52-1-450x450.png",
+        "postBy":"namdam",
+        "isThreeHide": true,
+        "date":"March 27, 2022",
+        "title":"My Favorite Easy Black Pizza Toast Recipe",
+        "details":"Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius per a augue magna hac. Nec hac et vestibulum duis a tincidunt per a aptent interdum purus feugiat a id aliquet erat himenaeos nunc torquent euismod adipiscing adipiscing dui gravida justo."
+      }
+    ]
+  }
+}

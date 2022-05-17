@@ -1,0 +1,37 @@
+@import "../../../App";
+
+
+.pageTitle{
+    .background-image{
+        width: 100%;
+        background-image: url("../media/background_one.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding: 2.2906835em 0;
+        margin: 0 0 5.9968353111em;
+        min-height: 240px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+
+        // Start The Title
+        .title-info{
+            h1{
+                
+                color: $--mainHeading;
+                font-size: 52px;
+                margin-bottom: 10px;
+                text-transform: capitalize;
+                padding: 0 15px;
+            }
+            span{
+                display: flex;
+                justify-content: center;
+                gap: .5em;
+            }
+        }
+    }
+}

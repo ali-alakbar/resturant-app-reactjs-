@@ -1,0 +1,68 @@
+@import "../../../App";
+
+.blog-grid-section {
+    .right-side-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        gap: 2em;
+
+        .right-side {
+            width: 400px;
+            border: solid 1px $--mainBorder;
+            border-radius: 10px;
+            margin-bottom: 5em;
+
+            .img-container {
+                height: 260px;
+                overflow: hidden;
+
+                img {
+                    transform: scale(1);
+                    transition: $--mainTransition;
+                    border-radius: 10px 10px 0 0;
+                    width: 100%;
+                    height: 100%;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+
+            .more-details {
+                padding: 30px !important;
+
+                .heading-title {
+                    font-size: 20px !important;
+
+                    &:hover {
+                        color: $--mainYellowHover;
+                    }
+                }
+
+                p {
+                    font-size: 12px !important;
+                }
+            }
+        }
+    }
+
+}
+
+// ==============
+// Start Responsivity
+// ==============
+
+// Small Screens
+@media (max-width: 768px) {
+.blog-grid-section {
+    .right-side-container {
+        justify-content: center;
+        }
+    }
+}
+
+// ==============
+// End Responsivity
+// ==============

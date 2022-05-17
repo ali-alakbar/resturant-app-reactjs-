@@ -1,0 +1,213 @@
+$--mainWhite: #fff;
+$--mainBlack: #000;
+$--mainYellow: #FFC222;
+$--mainYellowHover: #eeac00;
+$--mainGreen: #00A149;
+$--mainBorder: #e5e5e5;
+$--mainLightGray: #999;
+$--mainHeading: #1E1D23;
+$--mainBackgroundTwo: #02020e;
+$--mainTransition: all 0.3s ease-in-out;
+
+/* Start Screen Responsive */
+
+/* Small Screens */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Big Screens */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* End Screen Responsive */
+
+.container {
+  padding: 0 80px;
+  margin: 0 auto;
+}
+
+// ======== Start Global Rules ==========
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+      font-family: 'Gilroy', sans-serif;
+}
+
+input,textarea {
+  outline: none;
+}
+.section{
+  padding-top: 100px;
+}
+
+h1{
+  font-weight: 800;
+}
+
+a{
+  color: $--mainLightGray;
+  font-weight: 500;
+  &:hover{
+    color: $--mainYellowHover;
+  }
+}
+
+
+.App{
+  position: relative;
+  overflow: hidden;
+}
+
+/* medium Screens */
+@media (max-width: 1200px) {
+  .App{
+    padding-bottom: 75px;
+  }
+}
+// ======== End Global Rules ==========
+
+
+// ============ Start Functions ============
+
+
+@mixin box_of_info_function {
+  width: 20vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $--mainWhite;
+    line-height: 1;
+    margin-bottom: 25px ;
+  }
+
+  p {
+    line-height: 1.8;
+    font-size: 15px;
+    font-weight: 500;
+    color: #b0b0b0;
+    margin-bottom: 2em;
+  }
+}
+
+
+// A Function For a Transitional Effect
+@mixin img {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: scaleY(0);
+      transform-origin: bottom center;
+      background: $--mainYellow;
+      z-index: -1;
+      transition: transform 0.3s;
+    }
+  
+    &:hover {
+      img {
+        transform: scale(1.2);
+      }
+      &::after {
+        transform: scaleY(1);
+      }
+    }
+  
+    img {
+      width: 100%;
+      height: 100%;
+      transition: $--mainTransition;
+      transform: scale(1);
+    }
+    
+   
+}
+
+// A Function Fot an Input
+
+@mixin input{
+  .input-container {
+    margin-bottom: 1.5em;
+  
+    span {
+      color: #e2401c;
+    }
+  
+    label {
+      color: $--mainHeading;
+      display: block;
+      font-weight: 500;
+    }
+  
+    input {
+      width: 100%;
+      border: solid 1px $--mainBorder;
+      color: $--mainLightGray;
+      padding: 1em 1.5em;
+      transition: $--mainTransition;
+  
+      &:hover,
+      &:focus {
+        border: solid 1px $--mainYellow;
+      }
+    }
+  }
+}
+
+// A Function For a Buttons
+@mixin btn {
+  color: $--mainHeading;
+  background-color: $--mainYellow;
+  font-size: 12px !important;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  line-height: normal !important;
+  border:solid 3px $--mainYellow;
+  padding: 15px;
+  width: 100%;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: $--mainTransition;
+  
+  &:hover {
+    background-color: $--mainWhite;
+  }
+}
+
+// ============ End Functions ============

@@ -1,0 +1,239 @@
+@import "../../../App";
+
+.history-section{
+    // ============= Start Line Stylling =============
+    .line {
+        position: absolute;
+        display: inline-block;
+        width: 1px;
+        height: 100%;
+        transform: translateX(-50%);
+        top: 0;
+    }
+    .line-left {
+        background-color: #081624;
+        left: 25%;
+        opacity: 0.15;
+    }
+    
+    .line-right {
+        background-color: #081624;
+        right: 25%;
+        opacity: 0.15;
+    }
+
+    // ============= End Line Stylling =============
+    .container{
+        
+    .about-our-food{
+        text-align: center;
+        margin-bottom: 7em;
+        h1{
+            font-family: 'Norican', cursive;
+            color: $--mainYellow;
+            margin-bottom: 1em;
+            font-size: 32px;
+        }
+        h2{
+            color: $--mainHeading;
+            font-size: 42px;
+            margin-bottom: 1em;
+        }
+        p{
+            color: $--mainLightGray;
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 1.9;
+            margin-bottom: 1em;
+        }
+    }
+}
+    .history-content{
+        .history-title{
+            text-align: center;
+            font-size: 42px;
+            color: $--mainHeading;
+            margin-bottom: 2em;
+        }
+        .component-one{
+            position: relative;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-auto-flow: dense;
+            // direction: rtl;
+            padding: 50px 40px;
+            gap: 1em;
+            .middle-line{
+                left: 50%;
+                background-color: $--mainYellow;
+            }
+            
+            
+
+            // ---------------------
+            // Start Image Part
+            // ---------------------
+            .img-container{
+                // padding-right: 90px;
+                img{
+                    width: 100%;
+                    border-radius: 20px;
+                }
+            }
+            // ---------------------
+            // End Image Part
+            // ---------------------
+            // ---------------------
+            // ---------------------
+            // Start Description Part
+            // ---------------------
+            .discription{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-left: 0;
+                gap: 3em;
+
+                .left-side{
+                    text-align: end;
+                    padding-left: 1em;
+                    h2 {
+                        font-size: 35px;
+                        color: $--mainHeading;
+                        margin-bottom: 0.5em;
+                    }
+                    
+                    p {
+                        font-size: 15px;
+                        font-weight: 500;
+                        line-height: 1.8;
+                        color: $--mainLightGray;
+                    }
+                }
+                .right-side{
+                    width: 33%;
+                    margin-left: 0;
+                    .year-line {
+                        display: flex;
+                        align-items: center;
+                        justify-content: end;
+                        font-size: 30px;
+                        font-weight: 800;
+                        color: $--mainYellow;
+                        max-width: unset;
+                      .inner-line{
+                        width: 60px;
+                        height: 1px;
+                        background-color:$--mainYellow;
+                        vertical-align: middle;
+                        margin: 0 8px;
+                        position: relative;
+                        display: inline-block;
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            display: block;
+                            width: 8px;
+                            height: 8px;
+                            border-radius: 50%;
+                            background-color: $--mainYellow;
+                            top: -4px;
+                        }
+                      }
+                      .ltr{
+                          &::after{
+                            right: -12px;
+                          }
+                      }
+                      .rtl{
+                          &::after{
+                              left: -12px;
+                          }
+                      }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+// ==============
+// Start Responsivity
+// ==============
+
+// Medium Screens
+@media (max-width: 992px) {
+    .history-section {
+        .container {
+            padding:0 20px;
+        }
+        .history-content {
+            
+            .component-one {
+                grid-template-rows: 50% 50% !important;
+                direction: rtl !important;
+                grid-template-columns: auto !important;
+                .img-container {
+                    padding: 0 0 0 90px !important;
+
+                }
+
+                .middle-line{
+                    left: 3%;
+                    width: 2px;
+                }
+                .discription {
+                    gap: 0;
+                    .left-side{
+                        display: block;
+                        text-align: start !important; 
+                    }
+                    .right-side {
+                        .year-line{
+                            justify-content: end;
+                            .ltr {
+                                &::after {
+                                    right: inherit !important;
+                                    left: -12px ;
+                                }
+                            }
+                        }
+                    }
+                }
+    
+            }
+        }
+    }
+}
+
+
+// Small Screens
+@media (max-width: 768px) {
+.history-section {
+    .container {
+        padding: 0 20px;
+    }
+
+    .history-content {
+
+        .component-one {
+            .discription {
+                .right-side {
+                    .year-line {
+                        .inner-line{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+}
+
+// ==============
+// End Responsivity
+// ==============

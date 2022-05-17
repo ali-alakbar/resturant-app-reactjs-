@@ -1,0 +1,134 @@
+/* Start Screen Responsive */
+/* Small Screens */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Big Screens */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* End Screen Responsive */
+.container {
+  padding: 0 80px;
+  margin: 0 auto;
+}
+
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Gilroy', sans-serif;
+}
+
+input, textarea {
+  outline: none;
+}
+
+.section {
+  padding-top: 100px;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+a {
+  color: #999;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #eeac00;
+}
+
+.App {
+  position: relative;
+  overflow: hidden;
+}
+
+/* medium Screens */
+@media (max-width: 1200px) {
+  .App {
+    padding-bottom: 75px;
+  }
+}
+
+.recent-posts {
+  border: none !important;
+  display: -ms-grid;
+  display: grid;
+}
+
+.recent-posts h3 {
+  margin-bottom: 1em;
+}
+
+.recent-posts .content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.recent-posts .content-container .img-container {
+  width: 100px;
+}
+
+.recent-posts .content-container .img-container img {
+  width: 100%;
+  margin-right: 1em;
+  border-radius: 10px;
+}
+
+.recent-posts .content-container .other-content {
+  overflow-wrap: break-word;
+  padding: 0 20px;
+  border-bottom: 1px dashed #e5e5e5;
+}
+
+.recent-posts .content-container .other-content a {
+  color: #1E1D23;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 1em;
+  overflow-wrap: anywhere;
+}
+
+.recent-posts .content-container .other-content a:hover {
+  color: #eeac00;
+}
+
+.recent-posts .content-container .other-content p {
+  margin-top: .5em;
+  font-size: 13px;
+  color: #999;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,39 @@
+@import '../../../App'; 
+
+
+.logoContainer {
+    width: 120px;
+    cursor: pointer;
+
+    img {
+        width: 100%;
+    }
+}
+
+
+// ==============
+// Start Responsivity
+// ==============
+
+
+/* Big Screens */
+@media (max-width: 1170px) {
+    .navBar {
+        .logoContainer {
+            width: 150px;
+        }
+    }
+}
+
+/* Small Screens */
+@media (max-width: 768px) {
+    .navBar {
+        .logoContainer {
+            width: 100px;
+        }
+    }
+}
+
+// ==============
+// End Responsivity
+// ==============

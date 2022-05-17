@@ -1,0 +1,244 @@
+/* Start Screen Responsive */
+/* Small Screens */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Big Screens */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* End Screen Responsive */
+.container {
+  padding: 0 80px;
+  margin: 0 auto;
+}
+
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Gilroy', sans-serif;
+}
+
+input, textarea {
+  outline: none;
+}
+
+.section {
+  padding-top: 100px;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+a {
+  color: #999;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #eeac00;
+}
+
+.App {
+  position: relative;
+  overflow: hidden;
+}
+
+/* medium Screens */
+@media (max-width: 1200px) {
+  .App {
+    padding-bottom: 75px;
+  }
+}
+
+.card {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 250px;
+  padding: 10px;
+  border: solid 1px #e5e5e5;
+  border-radius: 20px;
+}
+
+.card .img-container {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  overflow: hidden;
+  background: #fff8e7;
+  border-radius: 20px;
+}
+
+.card .img-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  background: #FFC222;
+  z-index: -1;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.card .img-container:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.card .img-container:hover::after {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+.card .img-container img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.card .img-container::after {
+  border-radius: 20px;
+}
+
+.card .img-container .sale-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+
+.card .img-container .sale-bar .right {
+  font-size: 19px;
+  color: #999;
+  cursor: pointer;
+}
+
+.card .img-container .sale-bar .right:hover {
+  color: red !important;
+}
+
+.card .img-container .sale-bar .left {
+  color: #fff;
+  padding: 0 10px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 24px;
+  display: inline-block;
+  background: #1e1d23;
+  z-index: 3;
+  border-radius: 20px;
+}
+
+.card .other-content {
+  padding: 10px;
+}
+
+.card .other-content a {
+  color: #1E1D23;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: 6px;
+}
+
+.card .other-content a:hover {
+  color: #eeac00;
+}
+
+.card .other-content .description {
+  font-size: 14px;
+  line-height: 1.5;
+  overflow: hidden;
+  color: #999;
+  height: 3em;
+  margin-bottom: 10px;
+}
+
+.card .other-content .price-container {
+  font-size: 20px;
+  color: #999;
+  font-weight: 800;
+  margin-right: 0.5em;
+}
+
+.card .other-content .price-container .discounted-price {
+  font-weight: 800;
+  color: #FFC222;
+  margin-left: .5em;
+}
+
+.card .price-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.card .price-cart .icon-container .cartShopping {
+  background: #FFC222;
+  color: #1E1D23;
+  cursor: pointer;
+  width: 30px;
+  padding: 14px 7px;
+  border: solid 1px transparent;
+  border-radius: 20px;
+}
+
+/* Medium Screens */
+@media (max-width: 992px) {
+  .card {
+    width: 250px;
+    margin-bottom: 3em;
+  }
+}
+
+/* Small Screens */
+@media (max-width: 768px) {
+  .card {
+    width: 180px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

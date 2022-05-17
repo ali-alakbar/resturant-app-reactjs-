@@ -1,0 +1,179 @@
+/* Start Screen Responsive */
+/* Small Screens */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Big Screens */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* End Screen Responsive */
+.container {
+  padding: 0 80px;
+  margin: 0 auto;
+}
+
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Gilroy', sans-serif;
+}
+
+input, textarea {
+  outline: none;
+}
+
+.section {
+  padding-top: 100px;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+a {
+  color: #999;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #eeac00;
+}
+
+.App {
+  position: relative;
+  overflow: hidden;
+}
+
+/* medium Screens */
+@media (max-width: 1200px) {
+  .App {
+    padding-bottom: 75px;
+  }
+}
+
+.contact-section .container {
+  padding: 0;
+}
+
+.contact-section .container .intro {
+  margin-bottom: 3.5em;
+}
+
+.contact-section .container .intro h1 {
+  margin-bottom: 20px;
+  color: #1E1D23;
+  font-size: 42px;
+  line-height: 35px;
+  letter-spacing: -1.4px;
+}
+
+.contact-section .container .intro p {
+  color: #999;
+}
+
+.contact-section .container .card-sections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 5em;
+  margin-bottom: 5em;
+}
+
+.contact-section .container .card-sections .card-content {
+  width: 20vw;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+
+.contact-section .container .card-sections .card-content h2 {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 25px;
+}
+
+.contact-section .container .card-sections .card-content p {
+  line-height: 1.8;
+  font-size: 15px;
+  font-weight: 500;
+  color: #b0b0b0;
+  margin-bottom: 2em;
+}
+
+.contact-section .container .card-sections .card-content .icon {
+  font-size: 50px;
+  color: #FFC222;
+  margin-bottom: 35px;
+}
+
+.contact-section .container .card-sections .card-content h2 {
+  margin-bottom: 25px;
+}
+
+/* Medium Screens */
+@media (max-width: 992px) {
+  .contact-section .container {
+    text-align: center;
+    padding: 0 20px;
+  }
+  .contact-section .container .intro h1 {
+    font-size: 37px;
+  }
+  .contact-section .container .card-sections {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contact-section .container .card-sections .card-content {
+    width: 25vw;
+  }
+}
+
+/* Small Screens */
+@media (max-width: 768px) {
+  .contact-section .container .card-sections .card-content {
+    width: 100%;
+    padding: 0 30px;
+  }
+}
+/*# sourceMappingURL=Contact.css.map */

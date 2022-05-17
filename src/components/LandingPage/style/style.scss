@@ -1,0 +1,332 @@
+@import "../../../App";
+
+
+// Stylling landing page for general 
+.landing-page-section {
+    position: relative;
+    margin-bottom: 6rem;
+    &::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: $--mainBlack;
+        opacity: .4;
+    }
+
+
+    .landing-page-container{
+        position: relative;
+        z-index: 2;
+        position: relative;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: 50% 50%;
+        grid-auto-flow: dense;
+        padding: 50px 35px;
+        margin-bottom: 3em;
+        overflow: hidden;
+        .left-side {
+            .img-container {
+                position: relative;
+                
+                .abs {
+                    position: absolute;
+                    width: 20vw;
+                }
+                .toHover{
+                    transition: $--mainTransition;
+                    transform: scale(1);
+                    &:hover {
+                        transform: scale(1.06);
+                    }
+                }
+                .bg-main{
+                    position: relative;
+                    left: 30px;
+                    border-radius: 50%;
+                    z-index: 10;
+                    width: 100%;
+
+                }
+                .bg-food-green{
+                    left: 0;
+                    bottom: 0;
+                    z-index: 3;
+                    
+                }
+                .bg-food-tomatto {
+                    width: 32vw;
+                    left: -20rem;
+                    top: -7rem;
+                }
+                .bg-food-dots{
+                    width: 1060px;
+                    top: 0;
+                    left: 0;
+                    margin: -60px -315px 0 -200px;
+                }
+    
+            }
+        }
+        .right-side{
+            display: grid;
+            justify-items: start;
+            h1{
+                color: $--mainWhite;
+                font-size: 76px;
+                line-height: 78px;
+                text-shadow: 1px 0 6px $--mainBlack;
+                margin-bottom: 20px;
+                span{
+                    color: $--mainYellowHover;
+                }
+            }
+            h2{
+                color: #00a149;
+                font-size: 32px;
+                line-height: 36px;
+                margin-bottom: 10px;
+            }
+            p{
+                color: $--mainWhite;
+                font-size: 18px;
+                line-height: 24px;
+                letter-spacing: .45px;
+                margin-bottom: 20px;
+            }
+            .order-price{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 3em;
+                a{
+                    @include btn();
+                    width: 150px;
+                    font-weight: 700;
+                    text-align: center;
+                }
+                .price-container{
+                    display: flex;
+                    gap: 1em;
+                    span{
+                        font-weight: 700;
+                    }
+                    .discount{
+                        color: #00a149;
+                        font-size: 40px;
+                        line-height: 55px;
+                    }
+                    .price{
+                        color: $--mainLightGray;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .menu{
+        @include btn();
+        position: absolute;
+        width: 100px;
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+        text-align: center;
+        font-size: 15px !important;
+        font-weight: 700;
+        letter-spacing: 1.5px !important;
+    }
+}
+// Stylling home landing page No. one
+.homeOne {
+    background-color: #333;
+    .landing-page-container {
+        background-image: url('../media/landing-shape.png');
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: 85% auto;
+    }
+}
+
+// Stylling home landing page No. Two
+.homeTwo {
+    height: 150vh;
+    .landing-page-container {
+        background-color: #fff;
+        background-image: url('../media/orangeCircle.png');
+        z-index: 4;
+        height: 100%;
+        background-size: 88% auto;
+        background-position: 210.5% -305px;
+        background-repeat: no-repeat;
+        opacity: 1;
+        transition: background .3s, border-radius .3s, opacity .3s;
+        .left-side {
+                .img-container {
+                    .bg-food-green {
+                        position: absolute;
+                        left: 20rem;
+                        bottom: -10rem;
+                        width: 10vw;
+                    }
+        
+                    .bg-food-tomatto {
+                        width: 65vw;
+                        left: -7rem;
+                        top: -8rem;
+                    }
+                }
+            }
+            .right-side {
+        
+                h1 {
+                    color: $--mainHeading;
+                    font-size: 72px;
+                    text-transform: uppercase;
+                    line-height: 75px;
+                    text-shadow: 1px 0 6px transparent;
+                    span {
+                        font-size: 120px;
+                        text-transform: uppercase;
+                        line-height: 98px;
+                        text-shadow: 1px 0 6px #fff;
+                    }
+                }
+                p {
+                    color: #515151;
+                }
+            }
+    }
+}
+
+
+// ===================
+// Start Screen Responsive 
+// ===================
+/* Big Screens */
+@media (max-width: 1200px) {
+
+}
+
+/* Medium Screens */
+@media (max-width: 992px) {
+
+        .landing-page-section {
+            height: 80vh;
+            .landing-page-container {
+                background-size: cover;
+                background-position: 10rem 0rem;
+                .left-side {
+                    display: block;
+                    .img-container {
+                        .bg-food-tomatto {
+                            left: -3rem;
+                        }
+        
+                        .bg-food-dots {display: none;}
+                    }
+                }
+            }
+        }
+        // Stylling home landing page No. Two
+        .homeTwo {
+    
+            .landing-page-container {
+                .right-side {
+    
+                    h1 {
+                        font-size: 55px;
+                        span {
+                            font-size: 100px;
+                        }
+                    }
+                }
+            }
+        }
+}
+
+/* Small Screens */
+@media (max-width: 768px) {
+
+    .landing-page-section {
+        .landing-page-container {
+            background-position: center bottom;
+            display: flex;
+            flex-direction: column;
+            gap: 10rem;
+            .left-side {
+                margin-bottom: 4rem;
+                .img-container{
+                    .bg-main{
+                        left: 0;
+                    }
+                    
+                    .bg-food-tomatto {
+                        display: none;
+                    }
+                }
+            }
+            .right-side{
+                text-align: center;
+                justify-items: center;
+                h1{
+                    font-size: 48px;
+                }
+                h2{
+                    font-size: 28px;
+                }
+                .order-price{
+                    display: grid;
+                    justify-items: center;
+                }
+            }
+        }
+    }
+        .homeTwo {
+            height: inherit;
+            .landing-page-container {
+                background-size: 120% auto;
+                
+                .left-side {
+                    margin-bottom: 2rem;
+                    .img-container {
+                        .bg-food-green {
+                            left: 14rem;
+                            bottom: 35rem;
+                        }
+
+                        .bg-food-dots {
+                            display: block;
+                            top: -300px;
+                        }
+                    }
+                }
+
+                .right-side {
+                    h1 {
+                        font-size: 55px;
+
+                        span {
+                            font-size: 100px;
+                        }
+                    }
+                    .order-price{
+                        .price-container{
+                            .discount, .price{
+                                text-shadow: 1px 0 6px #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}
+
+// ===================
+// End Screen Responsive 
+// ===================

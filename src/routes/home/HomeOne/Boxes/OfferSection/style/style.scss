@@ -1,0 +1,153 @@
+@import "../../../../../../App";
+
+
+.offer-section{
+    background-color: #f7f2e2;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2em;
+    margin-bottom: 7em;
+    padding: 6rem 30px;
+    
+    .offer-section-box{
+        background-color: $--mainWhite;
+        width: 31%;
+        padding: 50px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-auto-flow: dense;
+        align-items: center;
+        direction: rtl;
+        padding: 35px 30px 30px 40px;
+        height: 40vh;
+
+        .img-container{
+            position: relative;
+            img{
+                width: 100% ;
+            }
+            .bg-main{
+                position: relative;
+                top: 2em;
+                right: 1.6em;
+                z-index: 3;
+                
+            }
+            .bg-banner{
+                position: absolute;
+                transition: $--mainTransition;
+                transform: scale(1);
+            }
+        }
+        .other-content{
+            text-align: end;
+            h1{
+                font-size: 28px;
+                line-height: 30px;
+                margin-bottom: 10px;
+                color: $--mainHeading;
+            }
+            h2{
+                font-size: 12px;
+                font-weight: 500;
+                text-transform: uppercase;
+                line-height: 20px;
+                text-shadow: 1px 1px 10px $--mainWhite;
+                margin-bottom: 15px;
+                padding-right: 3em;
+                color: $--mainHeading;
+            }
+            p{
+                font-size: 20px;
+                font-weight: 800;
+                color: $--mainGreen;
+            }
+            a{
+                font-size: 14px;
+                font-weight: 700;
+                text-transform: uppercase;
+                line-height: 4.6em;
+                letter-spacing: 0;
+                color: $--mainYellow;
+                &:hover{
+                    color: $--mainYellowHover;
+                }
+            }
+        }
+        // On hovering on the box, the bg gets bigger
+        &:hover{
+            .img-container {
+                .bg-banner {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+    .green{
+        background-image: url("../media/h1_banner2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        .other-content {
+            h1 {
+                color: $--mainWhite;
+            }
+        
+            h2 {
+                color: $--mainWhite;
+                text-shadow: 1px 1px 10px $--mainBlack;
+            }
+        
+            p {
+                color: $--mainYellow;
+            }
+        }
+    }
+}
+
+
+// ===================
+// Start Screen Responsive 
+// ===================
+/* Big Screens */
+@media (max-width: 1200px) {
+    .offer-section {
+        .offer-section-box {
+            padding: 50px 30px;
+            width: 35%;
+        }
+    }
+}
+/* Medium Screens */
+@media (max-width: 992px) {
+    .offer-section {
+        .offer-section-box {
+            width: 40%;        
+            height: 40vh;
+        }
+    }
+}
+
+/* Small Screens */
+@media (max-width: 768px) {
+    .offer-section {
+        .offer-section-box {
+            width: 100%;
+            height: 40vh;
+            padding: 20px 30px;
+            .other-content{
+                h1{
+                    font-size: 25px;
+                }
+                h2{
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}
+
+// ===================
+// End Screen Responsive 
+// ===================

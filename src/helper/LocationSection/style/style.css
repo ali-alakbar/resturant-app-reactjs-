@@ -1,0 +1,217 @@
+/* Start Screen Responsive */
+/* Small Screens */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Big Screens */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* End Screen Responsive */
+.container {
+  padding: 0 80px;
+  margin: 0 auto;
+}
+
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Gilroy', sans-serif;
+}
+
+input, textarea {
+  outline: none;
+}
+
+.section {
+  padding-top: 100px;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+a {
+  color: #999;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #eeac00;
+}
+
+.App {
+  position: relative;
+  overflow: hidden;
+}
+
+/* medium Screens */
+@media (max-width: 1200px) {
+  .App {
+    padding-bottom: 75px;
+  }
+}
+
+.location-section {
+  width: 100%;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  justify-items: center;
+}
+
+.location-section .location-container {
+  width: 90%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  gap: 2em;
+  padding: 50px 0;
+  border: solid 1px #e5e5e5;
+  margin-bottom: 4em;
+  height: -webkit-fit-content !important;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
+}
+
+.location-section .location-container .map-container {
+  position: relative;
+  width: 100%;
+}
+
+.location-section .location-container .map-container .location-map {
+  width: 100%;
+}
+
+.location-section .location-container .contact-form {
+  padding: 20px;
+}
+
+.location-section .location-container .contact-form .contact-title h1 {
+  color: #1E1D23;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 35px;
+  letter-spacing: -1.4px;
+  margin-bottom: 20px;
+}
+
+.location-section .location-container .contact-form .contact-title p {
+  color: #999;
+  margin-bottom: 50px;
+}
+
+.location-section .location-container .contact-form form {
+  display: -ms-grid;
+  display: grid;
+  width: 90%;
+  margin-bottom: -15px;
+}
+
+.location-section .location-container .contact-form form input, .location-section .location-container .contact-form form textarea {
+  padding: 10px 30px;
+  font-size: 15px;
+  color: #999;
+  border: solid 1px #e5e5e5;
+  border-radius: 8px;
+  background: #fff;
+  margin-bottom: 15px;
+  -webkit-transition: border 0.3s ease-in-out;
+  transition: border 0.3s ease-in-out;
+}
+
+.location-section .location-container .contact-form form input:hover, .location-section .location-container .contact-form form input:focus, .location-section .location-container .contact-form form textarea:hover, .location-section .location-container .contact-form form textarea:focus {
+  border: solid 1px #eeac00;
+}
+
+.location-section .location-container .contact-form form .textarea-container {
+  margin-bottom: 5rem;
+}
+
+.location-section .location-container .contact-form form .textarea-container textarea {
+  resize: vertical;
+  width: 100%;
+  height: 100%;
+  height: 20vh;
+  max-height: 30vh;
+  min-height: 10vh;
+}
+
+.location-section .location-container .contact-form form button {
+  color: #1E1D23;
+  background-color: #FFC222;
+  font-size: 12px !important;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  line-height: normal !important;
+  border: solid 3px #FFC222;
+  padding: 15px;
+  width: 100%;
+  border-radius: 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 20vw;
+  position: relative;
+  top: -50px;
+}
+
+.location-section .location-container .contact-form form button:hover {
+  background-color: #fff;
+}
+
+@media (max-width: 1200px) {
+  .location-section .location-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .location-section .location-container .map-container {
+    height: 100vh;
+    margin-bottom: 4em;
+  }
+}
+
+@media (max-width: 768px) {
+  .location-section .location-container {
+    text-align: center;
+  }
+  .location-section .location-container .contact-form .contact-title h1 {
+    font-size: 37px;
+  }
+  .location-section .location-container .contact-form form {
+    width: 100%;
+    justify-items: center;
+  }
+  .location-section .location-container .contact-form form button {
+    width: 40vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -46,6 +46,11 @@ const App = () => {
             element={<HomeOne cart={cart} onAdd={onAdd} />}
           />
           <Route
+            path={"/resturant-app-reactjs-"}
+            className="page-activated"
+            element={<HomeTwo cart={cart} onAdd={onAdd} />}
+          />
+          <Route
             path={"/"}
             className="page-activated"
             element={<HomeTwo cart={cart} onAdd={onAdd} />}

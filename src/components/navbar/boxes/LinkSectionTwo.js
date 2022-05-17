@@ -24,17 +24,21 @@ const LinkSectionTwo = (props) => {
     <ul className="linkSection Two">
       {/* Side Bar Component*/}
       {/* =============== Start Links =============== */}
-      <li className="bullet bullet-5">
-        <div className="icon-container">
-          <FontAwesomeIcon icon={faShop} />
-        </div>
-        <span className="title">Shop</span>
-      </li>
+      <NavLink to={"/Shop"}>
+        <li className="bullet bullet-5">
+          <div className="icon-container">
+            <FontAwesomeIcon icon={faShop} />
+          </div>
+          <span className="title">Shop</span>
+        </li>
+      </NavLink>
+
       <li onClick={showSearchBar} className="bullet bullet-1">
         <div className="icon-container"></div>
         <FontAwesomeIcon icon={faSearch} />
         <span className="title">Search</span>
       </li>
+
       <NavLink to={"/Account"}>
         <li className="bullet bullet-2">
           <div className="icon-container clickable">
@@ -44,15 +48,15 @@ const LinkSectionTwo = (props) => {
           <SignIn />
         </li>
       </NavLink>
-        <NavLink to={"/Wishlist"}>
-      <li className="bullet bullet-3">
+      <NavLink to={"/Wishlist"}>
+        <li className="bullet bullet-3">
           <div className="icon-container">
             <FontAwesomeIcon icon={faHeart} />
             <span className="notification">{props.productsLength}</span>
           </div>
           <span className="title">Wishlist</span>
-      </li>
-        </NavLink>
+        </li>
+      </NavLink>
       <NavLink className={"cart-link"} to={"/Cart"}>
         <li className="bullet bullet-4" onClick={showSideBar}>
           <div className="icon-container">

@@ -51,9 +51,9 @@ const App = () => {
             element={<HomeTwo cart={cart} onAdd={onAdd} />}
           />
           <Route
-            path={"/"}
+            path={""}
             className="page-activated"
-            element={<HomeTwo cart={cart} onAdd={onAdd} />}
+            element={<HomeOne cart={cart} onAdd={onAdd} />}
           />
           <Route
             path={"/HomeTwo"}
